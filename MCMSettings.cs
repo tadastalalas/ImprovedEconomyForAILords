@@ -1,8 +1,6 @@
 ﻿using MCM.Abstractions.Attributes;
 using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Base.Global;
-using TaleWorlds.CampaignSystem;
-using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Localization;
 
 namespace ImprovedEconomyForAILords
@@ -53,7 +51,7 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyGroup("Other Members Of The Same Clan Settings", GroupOrder = 1)]
         public bool AllClanMembersGetRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Other Clan Members Revenue Multiplier", 0f, 1.0f, "0.00", Order = 1, RequireRestart = false, HintText = "All other clan members' revenue multiplier. Default is 20% of what clan leader gets. [Default: 0.20]")]
+        [SettingPropertyFloatingInteger("Other Clan Members Revenue Percentage", 0f, 1.0f, "0.00", Order = 1, RequireRestart = false, HintText = "All other clan members' revenue percentage. Default is 20% of what clan leader gets. [Default: 0.20]")]
         [SettingPropertyGroup("Other Members Of The Same Clan Settings", GroupOrder = 1)]
         public float OtherSameClanMembersRevenueMultiplier { get; set; } = 0.20f;
 
@@ -63,23 +61,23 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyGroup("Other Clans With No Fiefs Settings", GroupOrder = 2)]
         public bool ClansWithNoFiefsGetsAShareOfRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("0 Relation Revenue Multiplier", 0f, 1.0f, "0.00", Order = 1, RequireRestart = false, HintText = "Fiefless Clans' members revenue multiplier when fiefless clan's leader has relation of 0 with the kingdom leader. [Default: 0.05]")]
+        [SettingPropertyFloatingInteger("0 Relation Revenue Percentage", 0f, 1.0f, "0.00", Order = 1, RequireRestart = false, HintText = "Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 0 with the kingdom leader. [Default: 0.05]")]
         [SettingPropertyGroup("Other Clans With No Fiefs Settings", GroupOrder = 2)]
         public float Relation0RevenueMultiplier { get; set; } = 0.05f;
 
-        [SettingPropertyFloatingInteger("30 Relation Revenue Multiplier", 0f, 1.0f, "0.00", Order = 2, RequireRestart = false, HintText = "Fiefless Clans' members revenue multiplier when fiefless clan's leader has relation of 30 with the kingdom leader. [Default: 0.10]")]
+        [SettingPropertyFloatingInteger("30 Relation Revenue Percentage", 0f, 1.0f, "0.00", Order = 2, RequireRestart = false, HintText = "Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 30 with the kingdom leader. [Default: 0.10]")]
         [SettingPropertyGroup("Other Clans With No Fiefs Settings", GroupOrder = 2)]
         public float Relation30RevenueMultiplier { get; set; } = 0.10f;
 
-        [SettingPropertyFloatingInteger("60 Relation Revenue Multiplier", 0f, 1.0f, "0.00", Order = 3, RequireRestart = false, HintText = "Fiefless Clans' members revenue multiplier when fiefless clan's leader has relation of 60 with the kingdom leader. [Default: 0.15]")]
+        [SettingPropertyFloatingInteger("60 Relation Revenue Percentage", 0f, 1.0f, "0.00", Order = 3, RequireRestart = false, HintText = "Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 60 with the kingdom leader. [Default: 0.15]")]
         [SettingPropertyGroup("Other Clans With No Fiefs Settings", GroupOrder = 2)]
         public float Relation60RevenueMultiplier { get; set; } = 0.15f;
 
-        [SettingPropertyFloatingInteger("100 Relation Revenue Multiplier", 0f, 1.0f, "0.00", Order = 4, RequireRestart = false, HintText = "Fiefless Clans' members revenue multiplier when fiefless clan's leader has relation of 100 with the kingdom leader. [Default: 0.20]")]
+        [SettingPropertyFloatingInteger("100 Relation Revenue Percentage", 0f, 1.0f, "0.00", Order = 4, RequireRestart = false, HintText = "Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 100 with the kingdom leader. [Default: 0.20]")]
         [SettingPropertyGroup("Other Clans With No Fiefs Settings", GroupOrder = 2)]
         public float Relation100RevenueMultiplier { get; set; } = 0.20f;
 
-        [SettingPropertyFloatingInteger("Fiefless Clan Leader Revenue Multiplier", 1.0f, 5.0f, "0.00", Order = 5, RequireRestart = false, HintText = "Fiefless Clan leader revenue multiplier after above relationship multipliers are calculated. In default setting fiefless clan leader will earn 50% more than other his clan members. [Default: 1.50]")]
+        [SettingPropertyFloatingInteger("How Much More Percentage Clan Leader Will Get", 1.0f, 10.0f, "0.00", Order = 5, RequireRestart = false, HintText = "Fiefless Clan leader revenue percentage added after above relationship percentages are calculated. In default setting fiefless clan leader will earn 50% more than other his clan members. [Default: 1.50]")]
         [SettingPropertyGroup("Other Clans With No Fiefs Settings", GroupOrder = 2)]
         public float FieflessClanLeaderRevenueMultiplier { get; set; } = 1.50f;
 
