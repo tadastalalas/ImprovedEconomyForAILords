@@ -87,9 +87,9 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]
         public bool EnableAILordsCaravans { get; set; } = true;
 
-        [SettingPropertyInteger("Caravans Troops Amount", 10, 100, Order = 1, RequireRestart = false, HintText = "Amount of troops caravans will have when created. [Default: 30]")]
-        [SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]
-        public int CaravansTroopsAmount { get; set; } = 30;
+        //[SettingPropertyInteger("Caravans Troops Amount", 10, 100, Order = 1, RequireRestart = false, HintText = "Amount of troops caravans will have when created. [Default: 30]")]
+        //[SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]
+        // public int CaravansTroopsAmount { get; set; } = 30;
 
         [SettingPropertyInteger("Caravans Denars Amount", 1000, 100000, Order = 2, RequireRestart = false, HintText = "Amount of denars caravans will have when created. [Default: 8520]")]
         [SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
+using Helpers;
 using MCM.Abstractions.Base.Global;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -521,7 +522,7 @@ namespace ImprovedEconomyForAILords
             }
             
             Settlement? selectedSettlement = hero.BornSettlement ?? hero.HomeSettlement;
-            int caravansTroopsAmount = settings.CaravansTroopsAmount;
+            // int caravansTroopsAmount = settings.CaravansTroopsAmount;
             int caravansDenarsAmount = settings.CaravansDenarsAmount;
 
             if (selectedSettlement == null || selectedSettlement.Culture != hero.Culture)
@@ -539,7 +540,8 @@ namespace ImprovedEconomyForAILords
             }
             else
             {
-                MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, false, null, null, caravansTroopsAmount, true);
+                PartyTemplateObject randomCaravanTemplate = CaravanHelper.GetRandomCaravanTemplate(hero.Culture, true, true);
+                MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, randomCaravanTemplate, false, null, null, true);
                 caravanParty.PartyTradeGold = caravansDenarsAmount;
                 caravanParty.InitializePartyTrade(caravansDenarsAmount);
             }
