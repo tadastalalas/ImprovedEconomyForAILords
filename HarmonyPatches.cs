@@ -4,6 +4,7 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.GameComponents;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Library;
+using TaleWorlds.Localization;
 
 namespace ImprovedEconomyForAILords
 {
@@ -55,6 +56,36 @@ namespace ImprovedEconomyForAILords
                     $"AI enhanced boost for {town.Name}: {__result} (was: {originalResult})",
                     Colors.Cyan));
             }
+        }
+    }
+
+    [HarmonyPatch(typeof(DefaultClanFinanceModel), "CalculateClanIncomeInternal")]
+    class ClanIncomeTooltipPatch
+    {
+        private static readonly MCMSettings settings = AttributeGlobalSettings<MCMSettings>.Instance ?? new MCMSettings();
+
+        static void Postfix(Clan clan, ref ExplainedNumber goldChange, bool applyWithdrawals = false)
+        {
+            if (!settings.EnableThisModification || !settings.EnablePlayerRevenue)
+                return;
+
+            if (clan == null || clan.Leader == null || !clan.Leader.IsHumanPlayerCharacter)
+                return;
+
+            int fromAllSources = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromAllSources;
+            int fromKingdomLeader = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromKingdomLeader;
+            int fromTowns = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromTowns;
+            int fromCastles = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromCastles;
+            int fromVillages = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromVillages;
+
+            if (fromKingdomLeader > 0)
+                goldChange.Add(fromKingdomLeader, new TextObject("Improved Economy income from Kingdom Leader"), null);
+            if (fromTowns > 0)
+                goldChange.Add(fromTowns, new TextObject("Improved Economy income from Towns"), null);
+            if (fromCastles > 0)
+                goldChange.Add(fromCastles, new TextObject("Improved Economy income from Castles"), null);
+            if (fromVillages > 0)
+                goldChange.Add(fromVillages, new TextObject("Improved Economy income from Villages"), null);
         }
     }
 }

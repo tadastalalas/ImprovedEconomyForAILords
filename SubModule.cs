@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
-using Helpers;
 using MCM.Abstractions.Base.Global;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -74,6 +73,13 @@ namespace ImprovedEconomyForAILords
         int clanMembersWithFiefsGotPaid = 0;
         int clanLeadersWithoutFiefsGotPaid = 0;
         int clanMembersWithoutFiefsGotPaid = 0;
+
+        public static int playerTotalIncomeFromAllSources = 0;
+        public static int playerTotalIncomeFromKingdomLeader = 0;
+        public static int playerTotalIncomeFromTowns = 0;
+        public static int playerTotalIncomeFromCastles = 0;
+        public static int playerTotalIncomeFromVillages = 0;
+        public static int playerIncomeFromArenaLeaderboard = 0;
 
         int fieflessRelNoPayClans = 0;
         int fieflessRelMinus29to29Clans = 0;
@@ -167,6 +173,13 @@ namespace ImprovedEconomyForAILords
             fieflessRel60to99Clans = 0;
             fieflessRel100PlusClans = 0;
 
+            playerTotalIncomeFromKingdomLeader = 0;
+            playerTotalIncomeFromAllSources = 0;
+            playerTotalIncomeFromTowns = 0;
+            playerTotalIncomeFromCastles = 0;
+            playerTotalIncomeFromVillages = 0;
+            playerIncomeFromArenaLeaderboard = 0;
+
             ProcessFiefs(Town.AllTowns, false);
             ProcessFiefs(Town.AllCastles, true);
 
@@ -214,27 +227,32 @@ namespace ImprovedEconomyForAILords
                 if (clanLeader == null || clanLeader.IsPrisoner)
                     continue;
 
+                if (clanLeader == Hero.MainHero && !settings.EnablePlayerRevenue)
+                    continue;
+
                 leadersWithFiefs.Add(clanLeader);
 
-                if (clanLeader != Hero.MainHero)
-                {
-                    ApplyFiefDenarsBonusForHero(clanLeader, fief, isFiefACastle, true, true);
-                    ApplyVillageDenarsBonusForHero(clanLeader, fief, true, true);
-                }
-
+                ApplyFiefDenarsBonusForHero(clanLeader, fief, isFiefACastle, true, true);
+                ApplyVillageDenarsBonusForHero(clanLeader, fief, true, true);
+                
                 if (clanLeader.IsKingdomLeader)
                 {
-                    var clans = Clan.All.Where(clan => clan.Kingdom == clanLeader.Clan.Kingdom && clan.Fiefs.Count <= 0 && clan != Hero.MainHero.Clan);
+                    IEnumerable<Clan> clans;
+
+                    if (!settings.EnablePlayerRevenue)
+                        clans = Clan.All.Where(clan => clan?.Kingdom == clanLeader?.Clan.Kingdom && clan?.Fiefs.Count <= 0 && clan != Hero.MainHero.Clan);
+                    else
+                        clans = Clan.All.Where(clan => clan?.Kingdom == clanLeader?.Clan.Kingdom && clan?.Fiefs.Count <= 0);
 
                     foreach (Clan clan in clans)
                     {
-                        List<Hero> fieflessClanMembers = clan?.Heroes.Where(hero => !hero.IsPrisoner && hero != Hero.MainHero && IsHeroAdult(hero)).ToList() ?? new List<Hero>();
+                        List<Hero> fieflessClanMembers = clan?.Heroes.Where(hero => !hero.IsPrisoner && IsHeroAdult(hero)).ToList() ?? new List<Hero>();
 
                         if (fieflessClanMembers.Count <= 0)
                             continue;
 
                         float relation = clan.Leader.GetRelation(clanLeader);
-                        
+
                         if (relation <= -30f)
                         {
                             fieflessClanMembersRevenueMultiplier = 0f;
@@ -296,7 +314,7 @@ namespace ImprovedEconomyForAILords
                 if (!settings.AllClanMembersGetRevenue)
                     continue;
 
-                List<Hero> clanMembers = ownerClan?.Heroes.Where(hero => hero != clanLeader && !hero.IsPrisoner && hero != Hero.MainHero && IsHeroAdult(hero)).ToList() ?? new List<Hero>();
+                List<Hero> clanMembers = ownerClan?.Heroes.Where(hero => hero != clanLeader && !hero.IsPrisoner && IsHeroAdult(hero)).ToList() ?? new List<Hero>();
 
                 foreach (Hero clanMember in clanMembers)
                 {
@@ -326,6 +344,8 @@ namespace ImprovedEconomyForAILords
                 if (IsClanLeader && HasFief)
                 {
                     clanLeadersWithFiefsGotPaid += payment;
+                    if (hero == Hero.MainHero)
+                        CalculateHowMuchRevenuePlayerGets(payment, hero, town, IsFiefACastle, IsClanLeader, HasFief, false);
                 }
                 else if (!IsClanLeader && HasFief)
                 {
@@ -336,6 +356,8 @@ namespace ImprovedEconomyForAILords
                 {
                     payment = (int)(payment * fieflessClanLeaderRevenueMultiplier);
                     clanLeadersWithoutFiefsGotPaid += payment;
+                    if (hero == Hero.MainHero)
+                        CalculateHowMuchRevenuePlayerGets(payment, hero, town, IsFiefACastle, IsClanLeader, HasFief, false);
                 }
                 else if (!IsClanLeader && !HasFief)
                 {
@@ -373,6 +395,8 @@ namespace ImprovedEconomyForAILords
                     if (IsClanLeader && HasFief)
                     {
                         clanLeadersWithFiefsGotPaid += payment;
+                        if (hero == Hero.MainHero)
+                            CalculateHowMuchRevenuePlayerGets(payment, hero, fief, false, IsClanLeader, HasFief, true);
                     }
                     else if (!IsClanLeader && HasFief)
                     {
@@ -383,6 +407,8 @@ namespace ImprovedEconomyForAILords
                     {
                         payment = (int)(payment * fieflessClanLeaderRevenueMultiplier);
                         clanLeadersWithoutFiefsGotPaid += payment;
+                        if (hero == Hero.MainHero)
+                            CalculateHowMuchRevenuePlayerGets(payment, hero, fief, false, IsClanLeader, HasFief, true);
                     }
                     else if (!IsClanLeader && !HasFief)
                     {
@@ -423,6 +449,25 @@ namespace ImprovedEconomyForAILords
                 return 1f + (tradeSkillValue / 200f);
             }
             return 1f;
+        }
+
+        private void CalculateHowMuchRevenuePlayerGets(int payment, Hero hero, Town town, bool IsFiefACastle, bool IsClanLeader, bool HasFief, bool IsVillage)
+        {
+            playerTotalIncomeFromAllSources += payment;
+
+            if (!hero.IsKingdomLeader && !HasFief)
+                playerTotalIncomeFromKingdomLeader += payment;
+
+            if (HasFief && !IsVillage)
+            {
+                if (IsFiefACastle)
+                    playerTotalIncomeFromCastles += payment;
+                else
+                    playerTotalIncomeFromTowns += payment;
+            }
+
+            if (IsVillage)
+                playerTotalIncomeFromVillages += payment;
         }
 
         private void HandleTradeExperienceForAI()
@@ -522,7 +567,7 @@ namespace ImprovedEconomyForAILords
             }
             
             Settlement? selectedSettlement = hero.BornSettlement ?? hero.HomeSettlement;
-            // int caravansTroopsAmount = settings.CaravansTroopsAmount;
+            int caravansTroopsAmount = settings.CaravansTroopsAmount;
             int caravansDenarsAmount = settings.CaravansDenarsAmount;
 
             if (selectedSettlement == null || selectedSettlement.Culture != hero.Culture)
@@ -540,8 +585,9 @@ namespace ImprovedEconomyForAILords
             }
             else
             {
-                PartyTemplateObject randomCaravanTemplate = CaravanHelper.GetRandomCaravanTemplate(hero.Culture, true, true);
-                MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, randomCaravanTemplate, false, null, null, true);
+                // PartyTemplateObject randomCaravanTemplate = CaravanHelper.GetRandomCaravanTemplate(hero.Culture, true, true); // For 1.3.x
+                // MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, randomCaravanTemplate, false, null, null, true); // For 1.3.x
+                MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, false, null, null, caravansTroopsAmount, true);
                 caravanParty.PartyTradeGold = caravansDenarsAmount;
                 caravanParty.InitializePartyTrade(caravansDenarsAmount);
             }
@@ -551,6 +597,8 @@ namespace ImprovedEconomyForAILords
         {
             if (!settings.EnableAILordsArenaRevenue)
                 return;
+
+            playerIncomeFromArenaLeaderboard = 0;
 
             var tournamentManager = Campaign.Current.TournamentManager;
             if (tournamentManager == null)
@@ -570,28 +618,32 @@ namespace ImprovedEconomyForAILords
                     LogMessage($"Rank {position}: {entry.Key.Name} - {entry.Value} points", Colors.Green);
                     position++;
                 }
+            }
 
-                int rewardedCount = 0;
+            for (int i = 0; i < leaderboard.Count; i++)
+            {
+                var entry = leaderboard[i];
+                Hero hero = entry.Key;
+                int actualRank = i + 1;
 
-                for (int i = 0; i < leaderboard.Count; i++)
+                if (hero.IsPrisoner)
+                    continue;
+
+                if (hero == Hero.MainHero && !settings.EnablePlayerArenaRevenue)
+                    continue;
+
+                int reward = CalculateArenaReward(actualRank);
+
+                if (reward > 0)
                 {
-                    var entry = leaderboard[i];
-                    Hero hero = entry.Key;
-                    int actualRank = i + 1;
+                    hero.ChangeHeroGold(reward);
 
-                    if (hero == Hero.MainHero || hero.IsPrisoner)
-                        continue;
+                    if (hero == Hero.MainHero)
+                        playerIncomeFromArenaLeaderboard = reward;
 
-                    int reward = CalculateArenaReward(actualRank);
-
-                    if (reward > 0)
+                    if (settings.LoggingEnabled)
                     {
-                        rewardedCount++;
-                        hero.ChangeHeroGold(reward);
-                        if (settings.LoggingEnabled)
-                        {
-                            LogMessage($"{hero.Name} earned {reward} denars from arena rank {actualRank}");
-                        }
+                        LogMessage($"{hero.Name} earned {reward} denars from arena rank {actualRank}");
                     }
                 }
             }

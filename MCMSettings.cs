@@ -17,31 +17,35 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnableThisModification { get; set; } = true;
 
-        [SettingPropertyBool("Enable AI Lords' Towns Revenue", Order = 1, RequireRestart = false, HintText = "Enable towns revenue for AI Lords. [Default: true]")]
+        [SettingPropertyBool("Enable Player Revenue", Order = 1, RequireRestart = false, HintText = "Enable revenue for Player Lords. [Default: true]")]
+        [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
+        public bool EnablePlayerRevenue { get; set; } = true;
+
+        [SettingPropertyBool("Enable AI Lords' Towns Revenue", Order = 2, RequireRestart = false, HintText = "Enable towns revenue for AI Lords. [Default: true]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnableAILordsTownsRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Town Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 2, RequireRestart = false, HintText = "Multiplier for town prosperity income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
+        [SettingPropertyFloatingInteger("Town Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 3, RequireRestart = false, HintText = "Multiplier for town prosperity income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public float DenarsRevenueMultiplierFromTown { get; set; } = 1.00f;
 
-        [SettingPropertyBool("Enable AI Lords' Castles Revenue", Order = 3, RequireRestart = false, HintText = "Enable castles revenue for AI Lords. [Default: true]")]
+        [SettingPropertyBool("Enable AI Lords' Castles Revenue", Order = 4, RequireRestart = false, HintText = "Enable castles revenue for AI Lords. [Default: true]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnableAILordsCastlesRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Castle Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 4, RequireRestart = false, HintText = "Multiplier for castle prosperity income. [Default: 1.00]")]
+        [SettingPropertyFloatingInteger("Castle Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 5, RequireRestart = false, HintText = "Multiplier for castle prosperity income. [Default: 1.00]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public float DenarsRevenueMultiplierFromCastle { get; set; } = 1.00f;
 
-        [SettingPropertyBool("Enable AI Lords' Villages Revenue", Order = 5, RequireRestart = false, HintText = "Enable villages revenue for AI Lords. [Default: true]")]
+        [SettingPropertyBool("Enable AI Lords' Villages Revenue", Order = 6, RequireRestart = false, HintText = "Enable villages revenue for AI Lords. [Default: true]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnableAILordsVillagesRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Village Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 6, RequireRestart = false, HintText = "Multiplier for village hearth income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
+        [SettingPropertyFloatingInteger("Village Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 7, RequireRestart = false, HintText = "Multiplier for village hearth income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public float DenarsRevenueMultiplierFromVillage { get; set; } = 1.00f;
 
-        [SettingPropertyBool("Consider Lords' Trade Skill", Order = 7, RequireRestart = false, HintText = "Enable this to consider Lords' trade skill when calculating revenue. For example Trade skill of 75 will increase revenue by 37%. [Default: false]")]
+        [SettingPropertyBool("Consider Lords' Trade Skill", Order = 8, RequireRestart = false, HintText = "Enable this to consider Lords' trade skill when calculating revenue. For example Trade skill of 75 will increase revenue by 37%. [Default: false]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool ConsiderLordsTradeSkill { get; set; } = false;
 
@@ -87,9 +91,9 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]
         public bool EnableAILordsCaravans { get; set; } = true;
 
-        //[SettingPropertyInteger("Caravans Troops Amount", 10, 100, Order = 1, RequireRestart = false, HintText = "Amount of troops caravans will have when created. [Default: 30]")]
-        //[SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]
-        // public int CaravansTroopsAmount { get; set; } = 30;
+        [SettingPropertyInteger("Caravans Troops Amount", 10, 100, Order = 1, RequireRestart = false, HintText = "Amount of troops caravans will have when created. [Default: 30]")]
+        [SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]
+        public int CaravansTroopsAmount { get; set; } = 30;
 
         [SettingPropertyInteger("Caravans Denars Amount", 1000, 100000, Order = 2, RequireRestart = false, HintText = "Amount of denars caravans will have when created. [Default: 8520]")]
         [SettingPropertyGroup("Caravans Settings", GroupOrder = 3)]
@@ -109,15 +113,19 @@ namespace ImprovedEconomyForAILords
 
 
         // Arena revenue settings
-        [SettingPropertyBool("Enable AI Lords' Arena Revenue", Order = 0, RequireRestart = false, HintText = "Enable arena tournament leaderboard revenue for AI Lords. Every week 10 most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]")]
+        [SettingPropertyBool("Enable AI Lords' Arena Revenue", Order = 0, RequireRestart = false, HintText = "Enable arena tournament leaderboard revenue for AI Lords. Every week 12 (by default) most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]")]
         [SettingPropertyGroup("Arena Revenue Settings", GroupOrder = 4)]
         public bool EnableAILordsArenaRevenue { get; set; } = true;
 
-        [SettingPropertyInteger("Arena Base Reward", 100, 100000, Order = 1, RequireRestart = false, HintText = "Base reward for arena top leaderboard members. First place gets 2x this amount, 10th place gets 0.5x. [Default: 12460]")]
+        [SettingPropertyBool("Enable Player Arena Revenue", Order = 1, RequireRestart = false, HintText = "Enable arena tournament leaderboard revenue for Player. [Default: true]")]
+        [SettingPropertyGroup("Arena Revenue Settings", GroupOrder = 4)]
+        public bool EnablePlayerArenaRevenue { get; set; } = true;
+
+        [SettingPropertyInteger("Arena Base Reward", 100, 100000, Order = 2, RequireRestart = false, HintText = "Base reward for arena top leaderboard members. First place gets 2x this amount, 10th place gets 0.5x. [Default: 12460]")]
         [SettingPropertyGroup("Arena Revenue Settings", GroupOrder = 4)]
         public int ArenaBaseReward { get; set; } = 12460;
 
-        [SettingPropertyInteger("Arena Leaderboard Count", 3, 30, Order = 2, RequireRestart = false, HintText = "Number of arena leaderboard members to reward (from 3 to 30). [Default: 12]")]
+        [SettingPropertyInteger("Arena Leaderboard Count", 3, 30, Order = 3, RequireRestart = false, HintText = "Number of arena leaderboard members to reward (from 3 to 30). [Default: 12]")]
         [SettingPropertyGroup("Arena Revenue Settings", GroupOrder = 4)]
         public int ArenaLeaderboardCount { get; set; } = 12;
 
