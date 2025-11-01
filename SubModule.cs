@@ -246,7 +246,10 @@ namespace ImprovedEconomyForAILords
 
                     foreach (Clan clan in clans)
                     {
-                        List<Hero> fieflessClanMembers = clan?.Heroes.Where(hero => !hero.IsPrisoner && IsHeroAdult(hero)).ToList() ?? new List<Hero>();
+                        if (clan?.Leader == null)
+                            continue;
+
+                        List<Hero> fieflessClanMembers = clan.Heroes.Where(hero => !hero.IsPrisoner && IsHeroAdult(hero)).ToList() ?? new List<Hero>();
 
                         if (fieflessClanMembers.Count <= 0)
                             continue;
@@ -539,7 +542,7 @@ namespace ImprovedEconomyForAILords
                 {
                     DestroyPartyAction.Apply(null, caravan.MobileParty);
                 }
-                catch (System.Exception ex)
+                catch (Exception ex)
                 {
                     DebugLogMessage($"Failed to remove caravan for {hero?.Name}: {ex.Message}");
                 }
@@ -751,7 +754,7 @@ namespace ImprovedEconomyForAILords
                 if (town.BuildingsInProgress.IsEmpty())
                     continue;
 
-                Hero aiLord = town.OwnerClan.Leader;
+                Hero aiLord = town.OwnerClan.Leader!; // Town owner is never null in this game so "!" is safe here
                 string heroId = aiLord.StringId;
                 string settlementId = town.Settlement.StringId;
 

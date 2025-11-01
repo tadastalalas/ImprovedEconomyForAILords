@@ -87,8 +87,8 @@ namespace ImprovedEconomyForAILords
                 goldChange.Add(fromCastles, new TextObject("Improved Economy income from Castles"), null);
             if (fromVillages > 0)
                 goldChange.Add(fromVillages, new TextObject("Improved Economy income from Villages"), null);
-            if (fromVillages > 0)
-                goldChange.Add(fromVillages, new TextObject("Improved Economy income from Arena"), null);
+            if (fromArena > 0)
+                goldChange.Add(fromArena, new TextObject("Improved Economy income from Arena"), null);
         }
     }
 }
