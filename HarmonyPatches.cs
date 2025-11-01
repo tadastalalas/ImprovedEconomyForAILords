@@ -77,6 +77,7 @@ namespace ImprovedEconomyForAILords
             int fromTowns = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromTowns;
             int fromCastles = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromCastles;
             int fromVillages = ImprovedEconomyForAILordsBehavior.playerTotalIncomeFromVillages;
+            int fromArena = ImprovedEconomyForAILordsBehavior.playerIncomeFromArenaLeaderboard;
 
             if (fromKingdomLeader > 0)
                 goldChange.Add(fromKingdomLeader, new TextObject("Improved Economy income from Kingdom Leader"), null);
@@ -86,6 +87,8 @@ namespace ImprovedEconomyForAILords
                 goldChange.Add(fromCastles, new TextObject("Improved Economy income from Castles"), null);
             if (fromVillages > 0)
                 goldChange.Add(fromVillages, new TextObject("Improved Economy income from Villages"), null);
+            if (fromVillages > 0)
+                goldChange.Add(fromVillages, new TextObject("Improved Economy income from Arena"), null);
         }
     }
 }
