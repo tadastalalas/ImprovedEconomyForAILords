@@ -211,12 +211,12 @@ namespace ImprovedEconomyForAILords
             HeroIncomeTotal.Clear();
 
             Dictionary<Clan, int> clanIncomeTracker = new Dictionary<Clan, int>();
+            Dictionary<Hero, int> heroIncomeTracker = new Dictionary<Hero, int>();
 
             foreach (Clan clan in Clan.All)
             {
                 if (clan == null || clan.Leader == null || clan.Leader.IsPrisoner)
                     continue;
-
                 if (clan == Hero.MainHero.Clan && !settings.EnablePlayerRevenue)
                     continue;
 
@@ -245,14 +245,31 @@ namespace ImprovedEconomyForAILords
 
                 if (clanIncomeTracker.ContainsKey(hero.Clan))
                     clanIncomeTracker[hero.Clan] += totalIncome;
-                else
-                    clanIncomeTracker[hero.Clan] = totalIncome;
             }
 
             // Convert to string format and populate ClanIncomeTotal
             foreach (var kvp in clanIncomeTracker)
             {
                 ClanIncomeTotal[kvp.Key] = kvp.Value.ToString();
+            }
+
+            // Populate HeroIncomeTotal from _paymentAgg
+            foreach (var kvp in _paymentAgg)
+            {
+                Hero hero = kvp.Key;
+                if (hero == null)
+                    continue;
+
+                var (townSum, castleSum, villageSum, _, _, _) = kvp.Value;
+                int totalIncome = townSum + castleSum + villageSum;
+
+                heroIncomeTracker[hero] = totalIncome;
+            }
+
+            // Convert to string format and populate HeroIncomeTotal
+            foreach (var kvp in heroIncomeTracker)
+            {
+                HeroIncomeTotal[kvp.Key] = kvp.Value.ToString();
             }
 
             // ProcessFiefs(Town.AllTowns, false);
@@ -283,10 +300,7 @@ namespace ImprovedEconomyForAILords
                 int total = townSum + castleSum + villageSum;
                 LogMessage($"{hero.Name} earned {total} (Towns ({townCount}) - {townSum}, Castles ({castleCount}) - {castleSum}, Villages ({villageCount}) - {villageSum})");
             }
-
             LogPlayerKingdomSummary();
-
-            
         }
 
         private void ProcessClanWithFiefs(Clan clan)
@@ -334,7 +348,6 @@ namespace ImprovedEconomyForAILords
 
             if (kingdomLeader == null || !kingdomLeader.IsKingdomLeader)
                 return;
-
             if (kingdomLeader.Clan == null || kingdomLeader.Clan.Fiefs.Count == 0)
                 return;
 
@@ -524,8 +537,8 @@ namespace ImprovedEconomyForAILords
             int basePayment = (int)((CalculateFiefDenarsPayment(town) * ConsiderLordsTradeSkill(hero, settings)));
             basePayment = (int)(basePayment * (IsFiefACastle ? denarsRevenueMultiplierFromCastle : denarsRevenueMultiplierFromTown));
 
-            ProcessPaymentForHero(hero, basePayment, IsFiefACastle, IsClanLeader, HasFief, false);
-            UpdatePaymentAggregation(hero, basePayment, IsFiefACastle, isVillage: false);
+            int actualPayment = ProcessPaymentForHero(hero, basePayment, IsFiefACastle, IsClanLeader, HasFief, false);
+            UpdatePaymentAggregation(hero, actualPayment, IsFiefACastle, isVillage: false);
         }
 
         private void ApplyVillageDenarsBonusForHero(Hero hero, Town fief, bool IsClanLeader, bool HasFief)
@@ -538,12 +551,12 @@ namespace ImprovedEconomyForAILords
                 int basePayment = (int)((CalculateVillageDenarsPayment(village) * ConsiderLordsTradeSkill(hero, settings))
                     * denarsRevenueMultiplierFromVillage);
 
-                ProcessPaymentForHero(hero, basePayment, false, IsClanLeader, HasFief, true);
-                UpdatePaymentAggregation(hero, basePayment, false, isVillage: true);
+                int actualPayment = ProcessPaymentForHero(hero, basePayment, false, IsClanLeader, HasFief, true);
+                UpdatePaymentAggregation(hero, actualPayment, false, isVillage: true);
             }
         }
 
-        private void ProcessPaymentForHero(Hero hero, int basePayment, bool isFiefACastle,
+        private int ProcessPaymentForHero(Hero hero, int basePayment, bool isFiefACastle,
             bool isClanLeader, bool hasFief, bool isVillage)
         {
             int payment = basePayment;
@@ -571,8 +584,8 @@ namespace ImprovedEconomyForAILords
                 payment = (int)(payment * fieflessClanMembersRevenueMultiplier);
                 clanMembersWithoutFiefsGotPaid += payment;
             }
-
             hero.ChangeHeroGold(payment);
+            return payment;
         }
 
         private void CalculateHowMuchRevenuePlayerGets(int payment, Hero hero, bool IsFiefACastle, bool IsClanLeader, bool HasFief, bool IsVillage)
