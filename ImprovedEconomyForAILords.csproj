@@ -11,7 +11,7 @@
     <BuildForWindowsStore>false</BuildForWindowsStore>
     <ModuleId>$(MSBuildProjectName)</ModuleId>
     <ModuleName>$(MSBuildProjectName)</ModuleName>
-    <ModuleUrl></ModuleUrl>
+    <ModuleUrl>https://www.nexusmods.com/mountandblade2bannerlord/mods/8698</ModuleUrl>
     <GameFolder>$(BANNERLORD_GAME_DIR)</GameFolder>
     <GameBinariesFolder Condition="Exists('$(GameFolder)\bin\Win64_Shipping_Client\Bannerlord.exe')">Win64_Shipping_Client</GameBinariesFolder>
     <GameBinariesFolder Condition="Exists('$(GameFolder)\bin\Gaming.Desktop.x64_Shipping_Client\Bannerlord.exe')">Gaming.Desktop.x64_Shipping_Client</GameBinariesFolder>
@@ -31,7 +31,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="MCM.UI.Adapter.MCMv5">
-      <HintPath>..\..\..\..\Gaming\Steam\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCM.UI.Adapter.MCMv5.dll</HintPath>
+      <HintPath>$(GameFolder)\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCM.UI.Adapter.MCMv5.dll</HintPath>
     </Reference>
     <Reference Include="MCMv5">
       <HintPath>$(GameFolder)\Modules\Bannerlord.MBOptionScreen\bin\Win64_Shipping_Client\MCMv5.dll</HintPath>
