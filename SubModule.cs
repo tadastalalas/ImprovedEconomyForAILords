@@ -234,15 +234,27 @@ namespace ImprovedEconomyForAILords
 
                 ApplyFiefDenarsBonusForHero(clanLeader, fief, isFiefACastle, true, true);
                 ApplyVillageDenarsBonusForHero(clanLeader, fief, true, true);
-                
+
                 if (clanLeader.IsKingdomLeader)
                 {
                     IEnumerable<Clan> clans;
 
                     if (!settings.EnablePlayerRevenue)
-                        clans = Clan.All.Where(clan => clan?.Kingdom == clanLeader?.Clan.Kingdom && clan?.Fiefs.Count <= 0 && clan != Hero.MainHero.Clan);
+                    {
+                        clans = Clan.All.Where(clan =>
+                            clan?.Kingdom == clanLeader?.Clan.Kingdom
+                            && clan?.Kingdom != null
+                            && clan?.Fiefs.Count <= 0
+                            && clan != Hero.MainHero.Clan);
+                    }
                     else
-                        clans = Clan.All.Where(clan => clan?.Kingdom == clanLeader?.Clan.Kingdom && clan?.Fiefs.Count <= 0);
+                    {
+                        clans = Clan.All.Where(clan =>
+                            clan?.Kingdom == clanLeader?.Clan.Kingdom
+                            && clan?.Kingdom != null
+                            && clan?.Fiefs.Count <= 0
+                            && (clan != Hero.MainHero.Clan || (Hero.MainHero.Clan.Kingdom != null && Hero.MainHero.MapFaction == Hero.MainHero.Clan.Kingdom)));
+                    }
 
                     foreach (Clan clan in clans)
                     {
@@ -357,7 +369,7 @@ namespace ImprovedEconomyForAILords
                 }
                 else if (IsClanLeader && !HasFief)
                 {
-                    payment = (int)(payment * fieflessClanLeaderRevenueMultiplier);
+                    payment = (int)(payment * fieflessClanMembersRevenueMultiplier * fieflessClanLeaderRevenueMultiplier);
                     clanLeadersWithoutFiefsGotPaid += payment;
                     if (hero == Hero.MainHero)
                         CalculateHowMuchRevenuePlayerGets(payment, hero, town, IsFiefACastle, IsClanLeader, HasFief, false);
@@ -408,13 +420,14 @@ namespace ImprovedEconomyForAILords
                     }
                     else if (IsClanLeader && !HasFief)
                     {
-                        payment = (int)(payment * fieflessClanLeaderRevenueMultiplier);
+                        payment = (int)(payment * fieflessClanMembersRevenueMultiplier * fieflessClanLeaderRevenueMultiplier);
                         clanLeadersWithoutFiefsGotPaid += payment;
                         if (hero == Hero.MainHero)
                             CalculateHowMuchRevenuePlayerGets(payment, hero, fief, false, IsClanLeader, HasFief, true);
                     }
                     else if (!IsClanLeader && !HasFief)
                     {
+                        payment = (int)(payment * fieflessClanMembersRevenueMultiplier);
                         clanMembersWithoutFiefsGotPaid += payment;
                     }
 
