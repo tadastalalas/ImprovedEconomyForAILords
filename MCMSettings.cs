@@ -21,31 +21,35 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnablePlayerRevenue { get; set; } = true;
 
-        [SettingPropertyBool("Enable AI Lords' Towns Revenue", Order = 2, RequireRestart = false, HintText = "Enable towns revenue for AI Lords. [Default: true]")]
+        [SettingPropertyFloatingInteger("Player Revenue Multiplier", 0.1f, 1.0f, "0.00", Order = 2, RequireRestart = false, HintText = "Multiplier for player clan revenue. Lower values reduce player income. [Default: 0.30]")]
+        [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
+        public float PlayerRevenueMultiplier { get; set; } = 0.30f;
+
+        [SettingPropertyBool("Enable AI Lords' Towns Revenue", Order = 3, RequireRestart = false, HintText = "Enable towns revenue for AI Lords. [Default: true]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnableAILordsTownsRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Town Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 3, RequireRestart = false, HintText = "Multiplier for town prosperity income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
+        [SettingPropertyFloatingInteger("Town Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 4, RequireRestart = false, HintText = "Multiplier for town prosperity income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public float DenarsRevenueMultiplierFromTown { get; set; } = 1.00f;
 
-        [SettingPropertyBool("Enable AI Lords' Castles Revenue", Order = 4, RequireRestart = false, HintText = "Enable castles revenue for AI Lords. [Default: true]")]
+        [SettingPropertyBool("Enable AI Lords' Castles Revenue", Order = 5, RequireRestart = false, HintText = "Enable castles revenue for AI Lords. [Default: true]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnableAILordsCastlesRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Castle Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 5, RequireRestart = false, HintText = "Multiplier for castle prosperity income. [Default: 1.00]")]
+        [SettingPropertyFloatingInteger("Castle Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 6, RequireRestart = false, HintText = "Multiplier for castle prosperity income. [Default: 1.00]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public float DenarsRevenueMultiplierFromCastle { get; set; } = 1.00f;
 
-        [SettingPropertyBool("Enable AI Lords' Villages Revenue", Order = 6, RequireRestart = false, HintText = "Enable villages revenue for AI Lords. [Default: true]")]
+        [SettingPropertyBool("Enable AI Lords' Villages Revenue", Order = 7, RequireRestart = false, HintText = "Enable villages revenue for AI Lords. [Default: true]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool EnableAILordsVillagesRevenue { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Village Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 7, RequireRestart = false, HintText = "Multiplier for village hearth income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
+        [SettingPropertyFloatingInteger("Village Denar Revenue Multiplier", 0f, 10.0f, "0.00", Order = 8, RequireRestart = false, HintText = "Multiplier for village hearth income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public float DenarsRevenueMultiplierFromVillage { get; set; } = 1.00f;
 
-        [SettingPropertyBool("Consider Lords' Trade Skill", Order = 8, RequireRestart = false, HintText = "Enable this to consider Lords' trade skill when calculating revenue. For example Trade skill of 75 will increase revenue by 37%. [Default: false]")]
+        [SettingPropertyBool("Consider Lords' Trade Skill", Order = 9, RequireRestart = false, HintText = "Enable this to consider Lords' trade skill when calculating revenue. For example Trade skill of 75 will increase revenue by 37%. [Default: false]")]
         [SettingPropertyGroup("Main Settings", GroupOrder = 0)]
         public bool ConsiderLordsTradeSkill { get; set; } = false;
 

@@ -272,9 +272,6 @@ namespace ImprovedEconomyForAILords
                 HeroIncomeTotal[kvp.Key] = kvp.Value.ToString();
             }
 
-            // ProcessFiefs(Town.AllTowns, false);
-            // ProcessFiefs(Town.AllCastles, true);
-
             if (settings.AllClanMembersGetRevenue)
             {
                 LogMessage($"Total clan leaders with fiefs: {leadersWithFiefs.Count}, total clan members with fiefs: {membersWithFiefs.Count}");
@@ -388,110 +385,6 @@ namespace ImprovedEconomyForAILords
             }
         }
 
-        /*
-        private void ProcessFiefs(IEnumerable<Town> fiefs, bool isFiefACastle)
-        {
-            foreach (Town fief in fiefs)
-            {
-                Hero? clanLeader = fief.OwnerClan?.Leader;
-
-                if (clanLeader == null || clanLeader.IsPrisoner)
-                    continue;
-
-                if (clanLeader == Hero.MainHero && !settings.EnablePlayerRevenue)
-                    continue;
-
-                leadersWithFiefs.Add(clanLeader);
-
-                ApplyFiefDenarsBonusForHero(clanLeader, fief, isFiefACastle, true, true);
-                ApplyVillageDenarsBonusForHero(clanLeader, fief, true, true);
-
-                if (clanLeader.IsKingdomLeader)
-                {
-                    IEnumerable<Clan> clans = GetFieflessClansInKingdom(clanLeader);
-
-                    foreach (Clan clan in clans)
-                    {
-                        if (clan?.Leader == null)
-                            continue;
-
-                        List<Hero> fieflessClanMembers = clan.Heroes.Where(hero => !hero.IsPrisoner && IsHeroAdult(hero)).ToList() ?? new List<Hero>();
-
-                        if (fieflessClanMembers.Count <= 0)
-                            continue;
-
-                        float relation = clan.Leader.GetRelation(clanLeader);
-
-                        fieflessClanMembersRevenueMultiplier = GetFieflessRevenueMultiplier(relation);
-
-                        if (fieflessClanMembersRevenueMultiplier <= 0f)
-                            continue;
-
-                        foreach (Hero fieflessClanMember in fieflessClanMembers)
-                        {
-                            if (fieflessClanMember != clan.Leader && settings.AllClanMembersGetRevenue)
-                            {
-                                ApplyFiefDenarsBonusForHero(fieflessClanMember, fief, isFiefACastle, false, false);
-                                ApplyVillageDenarsBonusForHero(fieflessClanMember, fief, false, false);
-
-                                membersNoFiefs.Add(fieflessClanMember);
-                            }
-                            else
-                            {
-                                ApplyFiefDenarsBonusForHero(fieflessClanMember, fief, isFiefACastle, true, false);
-                                ApplyVillageDenarsBonusForHero(fieflessClanMember, fief, true, false);
-
-                                leadersNoFiefs.Add(fieflessClanMember);
-                            }
-                        }
-                    }
-                }
-
-                if (!settings.AllClanMembersGetRevenue)
-                    continue;
-
-                List<Hero> clanMembers = fief.OwnerClan?.Heroes
-                    .Where(hero => hero != clanLeader && !hero.IsPrisoner && IsHeroAdult(hero))
-                    .ToList() ?? new List<Hero>();
-
-                foreach (Hero clanMember in clanMembers)
-                {
-                    membersWithFiefs.Add(clanMember);
-
-                    ApplyFiefDenarsBonusForHero(clanMember, fief, isFiefACastle, false, true);
-                    ApplyVillageDenarsBonusForHero(clanMember, fief, false, true);
-                }
-            }
-        }
-        */
-
-        /*
-        private IEnumerable<Clan> GetFieflessClansInKingdom(Hero kingdomLeader)
-        {
-            IEnumerable<Clan> clans;
-
-            if (!settings.EnablePlayerRevenue)
-            {
-                clans = Clan.All.Where(clan =>
-                    clan?.Kingdom == kingdomLeader?.Clan.Kingdom
-                    && clan?.Kingdom != null
-                    && clan?.Fiefs.Count <= 0
-                    && clan != Hero.MainHero.Clan);
-            }
-            else
-            {
-                clans = Clan.All.Where(clan =>
-                    clan?.Kingdom == kingdomLeader?.Clan.Kingdom
-                    && clan?.Kingdom != null
-                    && clan?.Fiefs.Count <= 0
-                    && (clan != Hero.MainHero.Clan ||
-                        (Hero.MainHero.Clan.Kingdom != null &&
-                         Hero.MainHero.MapFaction == Hero.MainHero.Clan.Kingdom)));
-            }
-            return clans;
-        }
-        */
-
         private float GetFieflessRevenueMultiplier(float relation)
         {
             if (relation <= RELATION_THRESHOLD_NEGATIVE)
@@ -561,6 +454,12 @@ namespace ImprovedEconomyForAILords
         {
             int payment = basePayment;
 
+            // Apply player revenue multiplier if this hero is in the player's clan
+            if (hero.Clan == Hero.MainHero.Clan)
+            {
+                payment = (int)(payment * settings.PlayerRevenueMultiplier);
+            }
+
             if (isClanLeader && hasFief)
             {
                 clanLeadersWithFiefsGotPaid += payment;
@@ -593,7 +492,10 @@ namespace ImprovedEconomyForAILords
             playerTotalIncomeFromAllSources += payment;
 
             if (!hero.IsKingdomLeader && !HasFief)
+            {
                 playerTotalIncomeFromKingdomLeader += payment;
+                return;
+            }
 
             if (HasFief && !IsVillage)
             {
@@ -839,6 +741,12 @@ namespace ImprovedEconomyForAILords
 
                 if (reward > 0)
                 {
+                    // Apply player revenue multiplier if this hero is in the player's clan
+                    if (hero.Clan == Hero.MainHero.Clan)
+                    {
+                        reward = (int)(reward * settings.PlayerRevenueMultiplier);
+                    }
+
                     hero.ChangeHeroGold(reward);
 
                     if (hero == Hero.MainHero)
