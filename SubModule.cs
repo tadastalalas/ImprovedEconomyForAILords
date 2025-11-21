@@ -215,7 +215,7 @@ namespace ImprovedEconomyForAILords
 
             foreach (Clan clan in Clan.All)
             {
-                if (clan == null || clan.Leader == null || clan.Leader.IsPrisoner)
+                if (clan == null || clan.Leader == null || clan.Leader.IsPrisoner || clan.Leader.IsWanderer)
                     continue;
                 if (clan == Hero.MainHero.Clan && !settings.EnablePlayerRevenue)
                     continue;
@@ -318,7 +318,7 @@ namespace ImprovedEconomyForAILords
             if (settings.AllClanMembersGetRevenue)
             {
                 var clanMembers = clan.Heroes
-                    .Where(hero => hero != clanLeader && !hero.IsPrisoner && IsHeroAdult(hero))
+                    .Where(hero => hero != clanLeader && !hero.IsPrisoner && !hero.IsWanderer && IsHeroAdult(hero))
                     .ToList();
 
                 foreach (Hero clanMember in clanMembers)
@@ -349,7 +349,7 @@ namespace ImprovedEconomyForAILords
                 return;
 
             List<Hero> fieflessClanMembers = clan.Heroes
-                .Where(hero => !hero.IsPrisoner && IsHeroAdult(hero))
+                .Where(hero => !hero.IsPrisoner && !hero.IsWanderer && IsHeroAdult(hero))
                 .ToList();
 
             if (fieflessClanMembers.Count == 0)
@@ -564,7 +564,7 @@ namespace ImprovedEconomyForAILords
 
             foreach (Hero hero in Hero.AllAliveHeroes)
             {
-                if (hero == Hero.MainHero || !hero.IsClanLeader || hero.Clan == null || hero.IsPrisoner)
+                if (hero == Hero.MainHero || !hero.IsClanLeader || hero.Clan == null || hero.IsPrisoner || hero.IsWanderer)
                     continue;
 
                 int ownedCaravansCount = hero.OwnedCaravans.Count;
@@ -589,7 +589,7 @@ namespace ImprovedEconomyForAILords
         {
             foreach (Hero hero in Hero.AllAliveHeroes)
             {
-                if (hero == Hero.MainHero)
+                if (hero == Hero.MainHero || hero.IsWanderer)
                     continue;
                 if (!CanHeroHaveACaravan(hero))
                     continue;
@@ -853,7 +853,7 @@ namespace ImprovedEconomyForAILords
         {
             foreach (Town town in Town.AllTowns.Concat(Town.AllCastles))
             {
-                if (town?.OwnerClan?.Leader == null || town.OwnerClan.Leader == Hero.MainHero)
+                if (town?.OwnerClan?.Leader == null || town.OwnerClan.Leader == Hero.MainHero || town.OwnerClan.Leader.IsWanderer)
                     continue;
 
                 if (town.IsUnderSiege || town.OwnerClan.Leader.IsPrisoner)
