@@ -35,7 +35,7 @@ namespace ImprovedEconomyForAILords
 
         public override void OnRefresh()
         {
-            IncomeText = new TextObject("Improved Economy Income").ToString();
+            IncomeText = new TextObject("{=IEFAIL_f8bJuu}Improved Economy Income").ToString();
             IncomeInfo.Clear();
 
             if (_hero is null || ViewModel is null)
@@ -47,13 +47,13 @@ namespace ImprovedEconomyForAILords
 
             if (behavior != null && behavior.HeroIncomeTotal.TryGetValue(_hero, out string heroIncome))
             {
-                var heroIncomeHeader = new TextObject("Daily Hero Income:");
-                IncomeInfo.AddPair(heroIncomeHeader, $"{heroIncome} denars");
+                var heroIncomeHeader = new TextObject("{=IEFAIL_Rk2wHb}Daily Hero Income:");
+                IncomeInfo.AddPair(heroIncomeHeader, new TextObject("{=IEFAIL_ys0YLH}{heroIncome} denars"));
             }
             else
             {
-                var heroIncomeHeader = new TextObject("Daily Hero Income:");
-                IncomeInfo.AddPair(heroIncomeHeader, "0 denars");
+                var heroIncomeHeader = new TextObject("{=IEFAIL_Rk2wHb}Daily Hero Income:");
+                IncomeInfo.AddPair(heroIncomeHeader, new TextObject("{=IEFAIL_Xywr4F}0 denars"));
             }
         }
     }

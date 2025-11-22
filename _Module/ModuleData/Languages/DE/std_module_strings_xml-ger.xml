@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Deutsch" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="Verbesserte Wirtschaft für KI-Lords" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="Haupteinstellungen" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="Einstellungen für andere Mitglieder desselben Clans" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="Einstellungen für andere Clans ohne Lehen" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="Karawaneneinstellungen" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="Arena-Einnahmeneinstellungen" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="Stadteinstellungen" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="Gebäude-Boost-Einstellungen" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="Spieler-Logging" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="Technische Einstellungen" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="Diese Modifikation aktivieren" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="Diese Modifikation aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="Spieler-Einnahmen aktivieren" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="Einnahmen für Spieler-Lords aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="Spieler-Einnahmen-Multiplikator" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="Multiplikator für Spieler-Clan-Einnahmen. Niedrigere Werte reduzieren das Spieler-Einkommen. [Standard: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="Einnahmen aus Städten für KI-Lords aktivieren" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="Stadt-Einnahmen für KI-Lords aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="Stadt-Denar-Einnahmen-Multiplikator" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="Multiplikator für Stadt-Prosperitäts-Einnahmen. Bei der Standardeinstellung von 1.00 entsprechen die Einnahmen der KI-Lords der Beschreibung auf der Nexus-Seite. [Standard: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="Einnahmen aus Burgen für KI-Lords aktivieren" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="Burg-Einnahmen für KI-Lords aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="Burg-Denar-Einnahmen-Multiplikator" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="Multiplikator für Burg-Prosperitäts-Einnahmen. [Standard: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="Einnahmen aus Dörfern für KI-Lords aktivieren" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="Dorf-Einnahmen für KI-Lords aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="Dorf-Denar-Einnahmen-Multiplikator" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="Multiplikator für Dorf-Herd-Einnahmen. Bei der Standardeinstellung von 1.00 entsprechen die Einnahmen der KI-Lords der Beschreibung auf der Nexus-Seite. [Standard: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="Handelsfertigkeit der Lords berücksichtigen" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="Aktivieren, um die Handelsfertigkeit der Lords bei der Berechnung der Einnahmen zu berücksichtigen. Zum Beispiel erhöht eine Handelsfertigkeit von 75 die Einnahmen um 37%. [Standard: falsch]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="Andere Clan-Mitglieder erhalten Einnahmen" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="Wenn diese Option aktiviert ist, erhalten alle anderen Clan-Mitglieder (nicht einmal der Clan-Leader) Einnahmen. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="Einnahmen-Prozentsatz anderer Clan-Mitglieder" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="Einnahmen-Prozentsatz aller anderen Clan-Mitglieder. Standard ist 20% dessen, was der Clan-Leader erhält. [Standard: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="Clans ohne Lehen erhalten einen Anteil an den Einnahmen" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="Andere Clans ohne Lehen erhalten Einnahmen basierend auf der Beziehung zum Königreichs-Leader und dem lehenlosen Clan-Leader. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="Einnahmen-Prozentsatz bei 0 Beziehung" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="Einnahmen-Prozentsatz der Mitglieder lehenloser Clans, wenn der lehenlose Clan-Leader eine Beziehung von 0 zum Königreichs-Leader hat. [Standard: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="Einnahmen-Prozentsatz bei 30 Beziehung" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="Einnahmen-Prozentsatz der Mitglieder lehenloser Clans, wenn der lehenlose Clan-Leader eine Beziehung von 30 zum Königreichs-Leader hat. [Standard: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="Einnahmen-Prozentsatz bei 60 Beziehung" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="Einnahmen-Prozentsatz der Mitglieder lehenloser Clans, wenn der lehenlose Clan-Leader eine Beziehung von 60 zum Königreichs-Leader hat. [Standard: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="Einnahmen-Prozentsatz bei 100 Beziehung" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="Einnahmen-Prozentsatz der Mitglieder lehenloser Clans, wenn der lehenlose Clan-Leader eine Beziehung von 100 zum Königreichs-Leader hat. [Standard: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="Wie viel mehr Prozentsatz der Clan-Leader erhält" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="Einnahmen-Prozentsatz des lehenlosen Clan-Leaders, der nach der Berechnung der obigen Beziehungs-Prozentsätze hinzugefügt wird. In der Standardeinstellung erhält der lehenlose Clan-Leader 50% mehr als seine anderen Clan-Mitglieder. [Standard: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="Karawanen für KI-Lords aktivieren" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Erzeugen/Verwalten von Karawanen der KI-Lords aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="Anzahl der Truppen in Karawanen" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="Anzahl der Truppen, die Karawanen bei der Erstellung haben. [Standard: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="Anzahl der Denare in Karawanen" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="Anzahl der Denare, die Karawanen bei der Erstellung haben. [Standard: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="Handelserfahrung für KI-Lords aktivieren" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="Handelsfertigkeits-Erfahrung für KI-Lords mit Karawanen aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="Handels-XP pro Karawane täglich" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="Grundbetrag der Handelserfahrung pro Karawane, den KI-Lords täglich erhalten. [Standard: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="Fokus-Punkte für Handels-XP berücksichtigen" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="Wenn aktiviert, wird die Handelserfahrung aus Karawanen von Fokus-Punkten und Attributen beeinflusst. [Standard: falsch]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Arena-Einnahmen für KI-Lords aktivieren" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Arena-Turnier-Leaderboard-Einnahmen für KI-Lords aktivieren. Jede Woche erhalten die 12 (standardmäßig) herausragendsten Helden monetäre Belohnungen basierend auf ihren Rankings und der unten angepassten Zahl. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="Arena-Einnahmen für Spieler aktivieren" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="Arena-Turnier-Leaderboard-Einnahmen für Spieler aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="Arena-Grundbelohnung" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="Grundbelohnung für die Top-Leaderboard-Mitglieder der Arena. Der Erste erhält das 2-fache, der Zehnte das 0.5-fache. [Standard: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="Anzahl der Arena-Leaderboard" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="Anzahl der zu belohnenden Arena-Leaderboard-Mitglieder (von 3 bis 30). [Standard: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="Zunahme der Stadt-Denare aktivieren" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="Zunahme der Stadt-Denare aktivieren. Stadt-Denare werden basierend auf dem Dorf-Herd erhöht. Formel: Vanilla-Betrag (1000 Denare) + Herd-Level (zum Beispiel 243) = 1243 tägliche Dorf-Denare. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="Gebäude-Boost für KI-Lords aktivieren" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="Automatischen Gebäude-Boost für Siedlungen der KI-Lords aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="Gebäude-Boost-Multiplikator für KI-Lords" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="Multiplikator für die Baugeschwindigkeit der KI-Lords. Höhere Werte bedeuten schnelleren Bau. [Standard: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="Prozentsatz der Denare, die der KI-Clan-Lord für Gebäude-Boost investiert" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="Prozentsatz des Goldes des KI-Clan-Lords, den sie in Gebäude-Boosts investieren (0.0 = keiner, 100.0 = alles Gold). [Standard: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="Spieler-relevantes Logging aktivieren" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="Logs anzeigen, die für das Königreich des Spielers relevant sind. [Standard: falsch]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="Logging für Debugging" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="Logging für Debugging. [Standard: deaktiviert]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="Verbesserte Wirtschaft Einnahmen vom Königreichs-Leader" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="Verbesserte Wirtschaft Einnahmen aus Städten" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="Verbesserte Wirtschaft Einnahmen aus Burgen" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="Verbesserte Wirtschaft Einnahmen aus Dörfern" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="Verbesserte Wirtschaft Einnahmen aus Arena" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="Verbesserte Wirtschaft Einnahmen" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="Tägliches Helden-Einkommen:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denars" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 Denare" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="Tägliches Clan-Einkommen:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denars" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

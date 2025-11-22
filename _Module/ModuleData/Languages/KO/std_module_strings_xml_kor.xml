@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="한국어" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="AI 영주를 위한 개선된 경제" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="주요 설정" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="같은 클랜의 다른 멤버 설정" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="영지가 없는 다른 클랜 설정" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="캐러밴 설정" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="아레나 수입 설정" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="마을 설정" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="건물 부스트 설정" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="플레이어 로깅" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="기술 설정" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="이 수정 활성화" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="이 수정을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="플레이어 수입 활성화" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="플레이어 영주의 수입을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="플레이어 수입 배율" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="플레이어 클랜 수입의 배율. 낮은 값은 플레이어 수입을 줄입니다. [기본값: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="AI 영주의 마을 수입 활성화" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="AI 영주의 마을 수입을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="마을 데나 수입 배율" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="마을 번영 수입의 배율. 기본값 1.00으로 설정하면 AI 영주의 수입이 Nexus 페이지 설명과 일치합니다. [기본값: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="AI 영주의 성 수입 활성화" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="AI 영주의 성 수입을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="성 데나 수입 배율" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="성 번영 수입의 배율. [기본값: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="AI 영주의 마을 수입 활성화" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="AI 영주의 마을 수입을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="마을 데나 수입 배율" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="마을 난로 수입의 배율. 기본값 1.00으로 설정하면 AI 영주의 수입이 Nexus 페이지 설명과 일치합니다. [기본값: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="영주의 무역 스킬 고려" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="수입 계산 시 영주의 무역 스킬을 고려하도록 활성화합니다. 예를 들어 무역 스킬 75은 수입을 37% 증가시킵니다. [기본값: false]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="다른 클랜 멤버가 수입 얻음" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="이 옵션이 활성화되면 모든 다른 클랜 멤버(클랜 리더조차도)가 수입을 얻습니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="다른 클랜 멤버 수입 비율" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="모든 다른 클랜 멤버의 수입 비율. 기본값은 클랜 리더가 얻는 것의 20%. [기본값: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="영지가 없는 클랜이 수입의 몫을 얻음" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="영지가 없는 다른 클랜은 왕국 리더와 영지가 없는 클랜 리더와의 관계에 기반하여 수입을 얻습니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="관계 0 수입 비율" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="영지가 없는 클랜의 멤버 수입 비율, 영지가 없는 클랜 리더가 왕국 리더와 관계 0일 때. [기본값: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="관계 30 수입 비율" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="영지가 없는 클랜의 멤버 수입 비율, 영지가 없는 클랜 리더가 왕국 리더와 관계 30일 때. [기본값: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="관계 60 수입 비율" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="영지가 없는 클랜의 멤버 수입 비율, 영지가 없는 클랜 리더가 왕국 리더와 관계 60일 때. [기본값: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="관계 100 수입 비율" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="영지가 없는 클랜의 멤버 수입 비율, 영지가 없는 클랜 리더가 왕국 리더와 관계 100일 때. [기본값: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="클랜 리더가 얻을 비율이 얼마나 더 많은가" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="위의 관계 비율이 계산된 후 추가되는 영지가 없는 클랜 리더의 수입 비율. 기본 설정에서 영지가 없는 클랜 리더는 다른 클랜 멤버보다 50% 더 많이 벌게 됩니다. [기본값: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="AI 영주의 캐러밴 활성화" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="AI 영주의 캐러밴 생성/처리를 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="캐러밴 병력 수량" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="생성 시 캐러밴이 가질 병력의 수량. [기본값: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="캐러밴 데나 수량" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="생성 시 캐러밴이 가질 데나의 수량. [기본값: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="AI 영주의 무역 경험 활성화" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="캐러밴을 가진 AI 영주의 무역 스킬 경험을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="캐러밴당 무역 XP 일일" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="AI 영주가 캐러밴당 일일로 받는 무역 경험의 기본 양. [기본값: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="무역 XP에 포커스 포인트 고려" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="활성화되면 캐러밴의 무역 경험이 포커스 포인트와 속성에 의해 영향을 받습니다. [기본값: false]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="AI 영주의 아레나 수입 활성화" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="AI 영주의 아레나 토너먼트 리더보드 수입을 활성화합니다. 매주 12명(기본값)의 가장 뛰어난 영웅이 랭킹과 아래 조정 수에 기반하여 금전 보상을 받습니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="플레이어 아레나 수입 활성화" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="플레이어의 아레나 토너먼트 리더보드 수입을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="아레나 기본 보상" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="아레나 탑 리더보드 멤버의 기본 보상. 1위는 2배, 10위는 0.5배. [기본값: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="아레나 리더보드 수" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="보상할 아레나 리더보드 멤버의 수 (3에서 30). [기본값: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="마을 데나 증가 활성화" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="마을 데나 증가를 활성화합니다. 마을 데나는 마을의 난로에 기반하여 증가합니다. 공식: 바닐라 양 (1000 데나) + 난로 레벨 (예: 243) = 1243 일일 마을 데나. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="AI 영주의 건물 부스트 활성화" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="AI 영주의 정착지의 자동 건물 부스트를 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="AI 영주 건물 부스트 배율" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="AI 영주의 건물 건설 속도의 배율. 높은 값은 더 빠른 건설을 의미합니다. [기본값: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="AI 클랜 영주가 건물 부스트에 투자할 데나의 백분율" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="AI 클랜 영주의 금이 건물 부스트에 투자할 백분율 (0.0 = 없음, 100.0 = 모든 금). [기본값: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="플레이어 관련 로깅 활성화" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="플레이어의 왕국과 관련된 로그를 표시합니다. [기본값: false]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="디버깅용 로깅" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="디버깅용 로깅. [기본값: 비활성화]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="왕국 리더로부터의 개선된 경제 수입" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="마을로부터의 개선된 경제 수입" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="성으로부터의 개선된 경제 수입" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="마을로부터의 개선된 경제 수입" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="아레나로부터의 개선된 경제 수입" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="개선된 경제 수입" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="일일 영웅 수입:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denars" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denars" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="일일 클랜 수입:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denars" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Türkçe" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="Improved Economy For AI Lords" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="Main Settings" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="Other Members Of The Same Clan Settings" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="Other Clans With No Fiefs Settings" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="Caravans Settings" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="Arena Revenue Settings" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="Towns Settings" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="Building Boost Settings" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="Player Logging" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="Technical Settings" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="Enable This Modification" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="Enable this modification. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="Enable Player Revenue" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="Enable revenue for Player Lords. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="Player Revenue Multiplier" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="Multiplier for player clan revenue. Lower values reduce player income. [Default: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="Enable AI Lords' Towns Revenue" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="Enable towns revenue for AI Lords. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="Town Denar Revenue Multiplier" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="Multiplier for town prosperity income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="Enable AI Lords' Castles Revenue" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="Enable castles revenue for AI Lords. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="Castle Denar Revenue Multiplier" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="Multiplier for castle prosperity income. [Default: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="Enable AI Lords' Villages Revenue" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="Enable villages revenue for AI Lords. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="Village Denar Revenue Multiplier" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="Multiplier for village hearth income. If set to the default value of 1.00, AI Lords’ income will match the description on the Nexus page. [Default: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="Consider Lords' Trade Skill" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="Enable this to consider Lords' trade skill when calculating revenue. For example Trade skill of 75 will increase revenue by 37%. [Default: false]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="Other Clan Members Get Revenue" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="When this option is enabled all other clan members (not even clan leader) will get revenue. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="Other Clan Members Revenue Percentage" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="All other clan members' revenue percentage. Default is 20% of what clan leader gets. [Default: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="Clans With No Fiefs Gets A Share Of Revenue" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="Other clans with no fiefs will earn revenue based on the relationship with the kingdom leader and fiefless clan leader. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="0 Relation Revenue Percentage" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 0 with the kingdom leader. [Default: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="30 Relation Revenue Percentage" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 30 with the kingdom leader. [Default: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="60 Relation Revenue Percentage" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 60 with the kingdom leader. [Default: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="100 Relation Revenue Percentage" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="Fiefless Clans' members revenue percentage when fiefless clan's leader has relation of 100 with the kingdom leader. [Default: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="How Much More Percentage Clan Leader Will Get" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="Fiefless Clan leader revenue percentage added after above relationship percentages are calculated. In default setting fiefless clan leader will earn 50% more than other his clan members. [Default: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="Enable AI Lords' Caravans" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Enable spawning/handling caravans of AI Lords. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="Caravans Troops Amount" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="Amount of troops caravans will have when created. [Default: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="Caravans Denars Amount" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="Amount of denars caravans will have when created. [Default: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="Enable AI Lords' Trade Experience" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="Enable trade skill experience for AI lords with caravans. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="Trade XP Per Caravan Daily" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="Base amount of trade experience per caravan that AI lords receive daily. [Default: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="Consider Focus Points For Trade XP" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="When enabled, trade experience from caravans will be affected by focus points and attributes. [Default: false]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Enable AI Lords' Arena Revenue" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Enable arena tournament leaderboard revenue for AI Lords. Every week 12 (by default) most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="Enable Player Arena Revenue" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="Enable arena tournament leaderboard revenue for Player. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="Arena Base Reward" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="Base reward for arena top leaderboard members. First place gets 2x this amount, 10th place gets 0.5x. [Default: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="Arena Leaderboard Count" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="Number of arena leaderboard members to reward (from 3 to 30). [Default: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="Enable Towns Denars Increase" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="Enable towns denars increase. Towns denars will be increased based on village's hearth. Formula: Vanilla amount (1000 denars) + hearth level (for example 243) = 1243 daily village denars. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="Enable AI Lords' Building Boost" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="Enable automatic building boost for AI lords' settlements. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="AI Lords Building Boost Multiplier" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="Multiplier for AI lords' building construction speed. Higher values mean faster building construction. [Default: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="Denars In Percent AI Clan Lord Will Invest For Buildings Boost" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="Percentage of AI clan lord's gold they will invest in building boosts (0.0 = none, 100.0 = all gold). [Default: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="Enable Player-Relevant Logging" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="Show logs relevant to the player's kingdom. [Default: false]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="Logging For Debugging" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="Logging for debugging. [Default: disabled]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="Improved Economy income from Kingdom Leader" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="Improved Economy income from Towns" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="Improved Economy income from Castles" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="Improved Economy income from Villages" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="Improved Economy income from Arena" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="Improved Economy Income" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="Daily Hero Income:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denars" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denars" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="Daily Clan Income:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denars" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

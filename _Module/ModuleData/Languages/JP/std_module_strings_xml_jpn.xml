@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="日本語" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="AI領主のための改善された経済" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="メイン設定" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="同じクランの他のメンバーの設定" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="封土のない他のクランの設定" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="キャラバンの設定" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="アリーナ収入設定" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="町の設定" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="建物ブースト設定" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="プレイヤーロギング" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="技術設定" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="この改造を有効にする" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="この改造を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="プレイヤー収入を有効にする" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="プレイヤー領主の収入を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="プレイヤー収入倍率" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="プレイヤークラン収入の倍率。低い値はプレイヤーの収入を減らす。[デフォルト: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="AI領主の町収入を有効にする" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="AI領主の町収入を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="町デナー収入倍率" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="町繁栄収入の倍率。デフォルト値の1.00に設定すると、AI領主の収入はNexusページの説明と一致する。[デフォルト: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="AI領主の城収入を有効にする" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="AI領主の城収入を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="城デナー収入倍率" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="城繁栄収入の倍率。[デフォルト: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="AI領主の村収入を有効にする" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="AI領主の村収入を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="村デナー収入倍率" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="村暖炉収入の倍率。デフォルト値の1.00に設定すると、AI領主の収入はNexusページの説明と一致する。[デフォルト: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="領主の交易スキルを考慮する" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="収入計算時に領主の交易スキルを考慮するように有効にする。例えば、交易スキル75は収入を37%増加させる。[デフォルト: false]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="他のクランメンバーが収入を得る" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="このオプションが有効になると、すべての他のクランメンバー（クランリーダーさえも）が収入を得る。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="他のクランメンバー収入割合" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="すべての他のクランメンバーの収入割合。デフォルトはクランリーダーが得るものの20%。[デフォルト: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="封土のないクランが収入のシェアを得る" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="封土のない他のクランは、王国リーダーと封土のないクランリーダーとの関係に基づいて収入を得る。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="関係0収入割合" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="封土のないクランのメンバーの収入割合、封土のないクランリーダーが王国リーダーと関係0のとき。[デフォルト: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="関係30収入割合" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="封土のないクランのメンバーの収入割合、封土のないクランリーダーが王国リーダーと関係30のとき。[デフォルト: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="関係60収入割合" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="封土のないクランのメンバーの収入割合、封土のないクランリーダーが王国リーダーと関係60のとき。[デフォルト: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="関係100収入割合" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="封土のないクランのメンバーの収入割合、封土のないクランリーダーが王国リーダーと関係100のとき。[デフォルト: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="クランリーダーが得る割合がどれだけ多いか" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="上記の関係割合が計算された後に追加される封土のないクランリーダーの収入割合。デフォルト設定では、封土のないクランリーダーは他のクランメンバーよりも50%多く稼ぐ。[デフォルト: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="AI領主のキャラバンを有効にする" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="AI領主のキャラバンの生成/処理を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="キャラバン部隊数" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="作成時にキャラバンが持つ部隊の数。[デフォルト: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="キャラバンデナー数" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="作成時にキャラバンが持つデナーの数。[デフォルト: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="AI領主の交易経験を有効にする" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="キャラバンを持つAI領主の交易スキル経験を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="キャラバンごとの交易XP日次" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="AI領主が日次でキャラバンごとに受け取る交易経験の基本量。[デフォルト: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="交易XPにフォーカスポイントを考慮する" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="有効にすると、キャラバンからの交易経験がフォーカスポイントと属性によって影響を受ける。[デフォルト: false]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="AI領主のアリーナ収入を有効にする" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="AI領主のアリーナトーナメントリーダーボード収入を有効にする。毎週12人（デフォルト）の最も優れた英雄がランキングと下記の調整数に基づいて金銭報酬を得る。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="プレイヤーアリーナ収入を有効にする" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="プレイヤーのアリーナトーナメントリーダーボード収入を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="アリーナ基本報酬" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="アリーナトップリーダーボードメンバーの基本報酬。1位は2倍、この額の10位は0.5倍。[デフォルト: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="アリーナリーダーボード数" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="報酬を与えるアリーナリーダーボードメンバーの数（3から30）。[デフォルト: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="町デナー増加を有効にする" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="町デナー増加を有効にする。町デナーは村の暖炉に基づいて増加する。式: バニラ量 (1000デナー) + 暖炉レベル (例: 243) = 1243日次村デナー。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="AI領主の建物ブーストを有効にする" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="AI領主の定住地の自動建物ブーストを有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="AI領主建物ブースト倍率" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="AI領主の建物建設速度の倍率。高い値はより速い建設を意味する。[デフォルト: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="AIクラン領主が建物ブーストに投資するデナーの割合" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="AIクラン領主の金が建物ブーストに投資する割合 (0.0 = なし, 100.0 = すべての金)。[デフォルト: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="プレイヤー関連ロギングを有効にする" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="プレイヤーの王国に関連するログを表示する。[デフォルト: false]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="デバッグ用ロギング" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="デバッグ用ロギング。[デフォルト: 無効]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="王国リーダーからの改善された経済収入" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="町からの改善された経済収入" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="城からの改善された経済収入" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="村からの改善された経済収入" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="アリーナからの改善された経済収入" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="改善された経済収入" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="日次英雄収入:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denars" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denars" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="日次クラン収入:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denars" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Polski" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="Ulepszona Gospodarka Dla Lordów AI" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="Główne Ustawienia" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="Ustawienia Innych Członków Tego Samego Klanu" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="Ustawienia Innych Klanów Bez Len" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="Ustawienia Karawan" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="Ustawienia Dochodu z Areny" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="Ustawienia Miast" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="Ustawienia Wzmocnienia Budynków" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="Logowanie Gracza" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="Ustawienia Techniczne" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="Włącz Tę Modyfikację" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="Włącz tę modyfikację. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="Włącz Dochód Gracza" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="Włącz dochód dla Lordów Gracza. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="Mnożnik Dochodu Gracza" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="Mnożnik dla dochodu klanu gracza. Niższe wartości zmniejszają dochód gracza. [Domyślnie: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="Włącz Dochód z Miast Lordów AI" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="Włącz dochód z miast dla Lordów AI. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="Mnożnik Dochodu w Denarach z Miasta" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="Mnożnik dla dochodu z prosperity miasta. Jeśli ustawiony na domyślną wartość 1.00, dochód Lordów AI będzie odpowiadać opisowi na stronie Nexus. [Domyślnie: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="Włącz Dochód z Zamków Lordów AI" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="Włącz dochód z zamków dla Lordów AI. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="Mnożnik Dochodu w Denarach z Zamku" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="Mnożnik dla dochodu z prosperity zamku. [Domyślnie: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="Włącz Dochód z Wsi Lordów AI" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="Włącz dochód z wsi dla Lordów AI. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="Mnożnik Dochodu w Denarach z Wsi" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="Mnożnik dla dochodu z ogniska wsi. Jeśli ustawiony na domyślną wartość 1.00, dochód Lordów AI będzie odpowiadać opisowi na stronie Nexus. [Domyślnie: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="Uwzględnij Umiejętność Handlu Lordów" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="Włącz to, aby uwzględnić umiejętność handlu Lordów przy obliczaniu dochodu. Na przykład umiejętność handlu 75 zwiększy dochód o 37%. [Domyślnie: false]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="Inni Członkowie Klanu Otrzymują Dochód" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="Gdy ta opcja jest włączona, wszyscy inni członkowie klanu (nawet nie lider klanu) otrzymają dochód. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="Procent Dochodu Innych Członków Klanu" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="Procent dochodu wszystkich innych członków klanu. Domyślnie 20% tego, co otrzymuje lider klanu. [Domyślnie: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="Klany Bez Len Otrzymują Udział w Dochodzie" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="Inne klany bez len zarobią dochód na podstawie relacji z liderem królestwa i liderem klanu bez len. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="Procent Dochodu przy Relacji 0" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="Procent dochodu członków klanów bez len, gdy lider klanu bez len ma relację 0 z liderem królestwa. [Domyślnie: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="Procent Dochodu przy Relacji 30" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="Procent dochodu członków klanów bez len, gdy lider klanu bez len ma relację 30 z liderem królestwa. [Domyślnie: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="Procent Dochodu przy Relacji 60" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="Procent dochodu członków klanów bez len, gdy lider klanu bez len ma relację 60 z liderem królestwa. [Domyślnie: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="Procent Dochodu przy Relacji 100" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="Procent dochodu członków klanów bez len, gdy lider klanu bez len ma relację 100 z liderem królestwa. [Domyślnie: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="O Ile Więcej Procentu Otrzyma Lider Klanu" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="Procent dochodu lidera klanu bez len dodany po obliczeniu powyższych procentów relacji. W domyślnych ustawieniach lider klanu bez len zarobi 50% więcej niż inni członkowie jego klanu. [Domyślnie: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="Włącz Karawany Lordów AI" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Włącz tworzenie/obsługę karawan Lordów AI. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="Ilość Wojsk w Karawanach" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="Ilość wojsk, które karawany będą miały przy tworzeniu. [Domyślnie: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="Ilość Denarów w Karawanach" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="Ilość denarów, które karawany będą miały przy tworzeniu. [Domyślnie: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="Włącz Doświadczenie Handlowe Lordów AI" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="Włącz doświadczenie umiejętności handlu dla Lordów AI z karawanami. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="XP Handlu na Karawanę Dziennie" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="Podstawowa ilość doświadczenia handlu na karawanę, którą Lordowie AI otrzymują dziennie. [Domyślnie: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="Uwzględnij Punkty Fokusu dla XP Handlu" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="Gdy włączone, doświadczenie handlu z karawan będzie wpływane przez punkty fokusu i atrybuty. [Domyślnie: false]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Włącz Dochód z Areny Lordów AI" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Włącz dochód z rankingu turnieju areny dla Lordów AI. Co tydzień 12 (domyślnie) najbardziej wyróżniających się bohaterów otrzyma nagrody pieniężne na podstawie ich rankingów i dostosowanej liczby poniżej. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="Włącz Dochód z Areny Gracza" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="Włącz dochód z rankingu turnieju areny dla Gracza. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="Podstawowa Nagroda Areny" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="Podstawowa nagroda dla członków top rankingu areny. Pierwsze miejsce otrzymuje 2x tej kwoty, 10. miejsce 0.5x. [Domyślnie: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="Liczba Rankingu Areny" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="Liczba członków rankingu areny do nagrodzenia (od 3 do 30). [Domyślnie: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="Włącz Zwiększenie Denarów Miast" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="Włącz zwiększenie denarów miast. Denary miast będą zwiększane na podstawie ogniska wsi. Formuła: Ilość vanilla (1000 denarów) + poziom ogniska (na przykład 243) = 1243 dziennych denarów wsi. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="Włącz Wzmocnienie Budynków Lordów AI" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="Włącz automatyczne wzmocnienie budynków dla osad Lordów AI. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="Mnożnik Wzmocnienia Budynków Lordów AI" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="Mnożnik dla prędkości budowy budynków Lordów AI. Wyższe wartości oznaczają szybszą budowę. [Domyślnie: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="Procent Denarów, Które Lord Klanu AI Zainwestuje na Wzmocnienie Budynków" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="Procent złota Lorda klanu AI, które zainwestują w wzmocnienia budynków (0.0 = brak, 100.0 = całe złoto). [Domyślnie: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="Włącz Logowanie Związane z Graczem" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="Pokaż logi związane z królestwem gracza. [Domyślnie: false]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="Logowanie do Debugowania" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="Logowanie do debugowania. [Domyślnie: wyłączone]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="Dochód z Ulepszonej Gospodarki od Lidera Królestwa" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="Dochód z Ulepszonej Gospodarki z Miast" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="Dochód z Ulepszonej Gospodarki z Zamków" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="Dochód z Ulepszonej Gospodarki z Wsi" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="Dochód z Ulepszonej Gospodarki z Areny" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="Dochód z Ulepszonej Gospodarki" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="Dzienny Dochód Bohatera:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denarów" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denarów" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="Dzienny Dochód Klanu:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denarów" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

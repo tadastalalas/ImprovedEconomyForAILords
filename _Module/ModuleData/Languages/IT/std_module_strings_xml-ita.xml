@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Italiano" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="Economia Migliorata per Signori IA" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="Impostazioni Principali" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="Impostazioni Altri Membri dello Stesso Clan" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="Impostazioni Altri Clan Senza Feudi" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="Impostazioni Carovane" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="Impostazioni Entrate Arena" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="Impostazioni Città" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="Impostazioni Boost Costruzioni" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="Registrazione Giocatore" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="Impostazioni Tecniche" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="Abilita Questa Modifica" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="Abilita questa modifica. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="Abilita Entrate Giocatore" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="Abilita entrate per Signori Giocatore. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="Moltiplicatore Entrate Giocatore" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="Moltiplicatore per entrate clan giocatore. Valori più bassi riducono le entrate del giocatore. [Predefinito: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="Abilita Entrate Città per Signori IA" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="Abilita entrate città per Signori IA. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="Moltiplicatore Entrate Denari Città" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="Moltiplicatore per entrate prosperità città. Se impostato al valore predefinito di 1.00, le entrate dei Signori IA corrisponderanno alla descrizione sulla pagina Nexus. [Predefinito: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="Abilita Entrate Castelli per Signori IA" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="Abilita entrate castelli per Signori IA. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="Moltiplicatore Entrate Denari Castello" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="Moltiplicatore per entrate prosperità castello. [Predefinito: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="Abilita Entrate Villaggi per Signori IA" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="Abilita entrate villaggi per Signori IA. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="Moltiplicatore Entrate Denari Villaggio" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="Moltiplicatore per entrate focolare villaggio. Se impostato al valore predefinito di 1.00, le entrate dei Signori IA corrisponderanno alla descrizione sulla pagina Nexus. [Predefinito: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="Considera Abilità Commercio Signori" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="Abilita questo per considerare l'abilità commercio dei Signori nel calcolo delle entrate. Ad esempio, abilità commercio di 75 aumenterà le entrate del 37%. [Predefinito: falso]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="Altri Membri Clan Ottengono Entrate" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="Quando questa opzione è abilitata tutti gli altri membri del clan (nemmeno il leader del clan) otterranno entrate. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="Percentuale Entrate Altri Membri Clan" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="Percentuale entrate di tutti gli altri membri del clan. Predefinito è 20% di quello che ottiene il leader del clan. [Predefinito: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="Clan Senza Feudi Ottengono Una Quota Delle Entrate" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="Altri clan senza feudi guadagneranno entrate basate sulla relazione con il leader del regno e il leader del clan senza feudi. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="Percentuale Entrate Relazione 0" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="Percentuale entrate membri clan senza feudi quando il leader del clan senza feudi ha relazione di 0 con il leader del regno. [Predefinito: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="Percentuale Entrate Relazione 30" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="Percentuale entrate membri clan senza feudi quando il leader del clan senza feudi ha relazione di 30 con il leader del regno. [Predefinito: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="Percentuale Entrate Relazione 60" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="Percentuale entrate membri clan senza feudi quando il leader del clan senza feudi ha relazione di 60 con il leader del regno. [Predefinito: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="Percentuale Entrate Relazione 100" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="Percentuale entrate membri clan senza feudi quando il leader del clan senza feudi ha relazione di 100 con il leader del regno. [Predefinito: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="Quanto Più Percentuale Otterrà il Leader del Clan" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="Percentuale entrate leader clan senza feudi aggiunta dopo il calcolo delle percentuali di relazione sopra. Nelle impostazioni predefinite il leader del clan senza feudi guadagnerà 50% in più rispetto agli altri suoi membri del clan. [Predefinito: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="Abilita Carovane Signori IA" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Abilita generazione/gestione carovane dei Signori IA. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="Quantità Truppe Carovane" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="Quantità di truppe che le carovane avranno quando create. [Predefinito: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="Quantità Denari Carovane" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="Quantità di denari che le carovane avranno quando create. [Predefinito: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="Abilita Esperienza Commercio Signori IA" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="Abilita esperienza abilità commercio per signori IA con carovane. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="XP Commercio Per Carovana Giornaliero" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="Quantità base di esperienza commercio per carovana che i signori IA ricevono giornalmente. [Predefinito: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="Considera Punti Focus Per XP Commercio" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="Quando abilitato, l'esperienza commercio dalle carovane sarà influenzata da punti focus e attributi. [Predefinito: falso]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Abilita Entrate Arena Signori IA" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Abilita entrate classifica torneo arena per Signori IA. Ogni settimana i 12 eroi più distinti (per default) riceveranno ricompense monetarie basate sui loro ranking e il numero regolato sotto. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="Abilita Entrate Arena Giocatore" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="Abilita entrate classifica torneo arena per Giocatore. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="Ricompensa Base Arena" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="Ricompensa base per membri top classifica arena. Primo posto ottiene 2x questo importo, decimo posto ottiene 0.5x. [Predefinito: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="Conteggio Classifica Arena" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="Numero di membri classifica arena da ricompensare (da 3 a 30). [Predefinito: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="Abilita Aumento Denari Città" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="Abilita aumento denari città. I denari delle città saranno aumentati basati sul focolare del villaggio. Formula: Importo vanilla (1000 denari) + livello focolare (ad esempio 243) = 1243 denari villaggio giornalieri. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="Abilita Boost Costruzioni Signori IA" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="Abilita boost costruzione automatico per insediamenti signori IA. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="Moltiplicatore Boost Costruzioni Signori IA" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="Moltiplicatore per velocità costruzione edifici signori IA. Valori più alti significano costruzione più veloce. [Predefinito: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="Percentuale Denari Che il Signore Clan IA Investirà Per Boost Edifici" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="Percentuale dell'oro del signore clan IA che investiranno in boost edifici (0.0 = nessuno, 100.0 = tutto l'oro). [Predefinito: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="Abilita Registrazione Rilevante Giocatore" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="Mostra registri rilevanti per il regno del giocatore. [Predefinito: falso]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="Registrazione Per Debug" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="Registrazione per debug. [Predefinito: disabilitato]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="Entrate Economia Migliorata dal Leader del Regno" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="Entrate Economia Migliorata dalle Città" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="Entrate Economia Migliorata dai Castelli" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="Entrate Economia Migliorata dai Villaggi" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="Entrate Economia Migliorata dall'Arena" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="Entrate Economia Migliorata" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="Entrate Eroe Giornaliere:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denari" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denari" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="Entrate Clan Giornaliere:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denari" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Français" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="Économie améliorée pour les seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="Paramètres principaux" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="Paramètres des autres membres du même clan" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="Paramètres des autres clans sans fiefs" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="Paramètres des caravanes" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="Paramètres des revenus d'arène" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="Paramètres des villes" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="Paramètres de boost de construction" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="Journalisation du joueur" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="Paramètres techniques" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="Activer cette modification" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="Activer cette modification. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="Activer les revenus du joueur" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="Activer les revenus pour les seigneurs joueurs. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="Multiplicateur des revenus du joueur" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="Multiplicateur pour les revenus du clan joueur. Les valeurs plus basses réduisent les revenus du joueur. [Par défaut : 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="Activer les revenus des villes pour les seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="Activer les revenus des villes pour les seigneurs IA. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="Multiplicateur des revenus en denars des villes" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="Multiplicateur pour les revenus de prospérité des villes. Si défini à la valeur par défaut de 1.00, les revenus des seigneurs IA correspondront à la description sur la page Nexus. [Par défaut : 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="Activer les revenus des châteaux pour les seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="Activer les revenus des châteaux pour les seigneurs IA. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="Multiplicateur des revenus en denars des châteaux" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="Multiplicateur pour les revenus de prospérité des châteaux. [Par défaut : 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="Activer les revenus des villages pour les seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="Activer les revenus des villages pour les seigneurs IA. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="Multiplicateur des revenus en denars des villages" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="Multiplicateur pour les revenus de foyer des villages. Si défini à la valeur par défaut de 1.00, les revenus des seigneurs IA correspondront à la description sur la page Nexus. [Par défaut : 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="Considérer la compétence de commerce des seigneurs" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="Activer ceci pour considérer la compétence de commerce des seigneurs lors du calcul des revenus. Par exemple, une compétence de commerce de 75 augmentera les revenus de 37%. [Par défaut : faux]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="Les autres membres du clan obtiennent des revenus" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="Lorsque cette option est activée, tous les autres membres du clan (pas même le chef de clan) obtiendront des revenus. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="Pourcentage des revenus des autres membres du clan" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="Pourcentage des revenus de tous les autres membres du clan. Par défaut 20% de ce que le chef de clan obtient. [Par défaut : 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="Les clans sans fiefs obtiennent une part des revenus" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="Les autres clans sans fiefs gagneront des revenus basés sur la relation avec le chef du royaume et le chef du clan sans fief. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="Pourcentage des revenus à 0 relation" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="Pourcentage des revenus des membres des clans sans fief lorsque le chef du clan sans fief a une relation de 0 avec le chef du royaume. [Par défaut : 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="Pourcentage des revenus à 30 relation" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="Pourcentage des revenus des membres des clans sans fief lorsque le chef du clan sans fief a une relation de 30 avec le chef du royaume. [Par défaut : 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="Pourcentage des revenus à 60 relation" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="Pourcentage des revenus des membres des clans sans fief lorsque le chef du clan sans fief a une relation de 60 avec le chef du royaume. [Par défaut : 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="Pourcentage des revenus à 100 relation" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="Pourcentage des revenus des membres des clans sans fief lorsque le chef du clan sans fief a une relation de 100 avec le chef du royaume. [Par défaut : 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="Combien de pourcentage supplémentaire le chef de clan obtiendra" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="Pourcentage des revenus du chef de clan sans fief ajouté après le calcul des pourcentages de relation ci-dessus. Dans les paramètres par défaut, le chef de clan sans fief gagnera 50% de plus que ses autres membres du clan. [Par défaut : 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="Activer les caravanes des seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Activer la génération/gestion des caravanes des seigneurs IA. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="Quantité de troupes des caravanes" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="Quantité de troupes que les caravanes auront lors de leur création. [Par défaut : 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="Quantité de denars des caravanes" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="Quantité de denars que les caravanes auront lors de leur création. [Par défaut : 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="Activer l'expérience de commerce des seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="Activer l'expérience de compétence de commerce pour les seigneurs IA avec caravanes. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="XP de commerce par caravane quotidien" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="Montant de base de l'expérience de commerce par caravane que les seigneurs IA reçoivent quotidiennement. [Par défaut : 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="Considérer les points de focus pour l'XP de commerce" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="Lorsqu'activé, l'expérience de commerce des caravanes sera affectée par les points de focus et les attributs. [Par défaut : faux]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Activer les revenus d'arène des seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Activer les revenus du classement des tournois d'arène pour les seigneurs IA. Chaque semaine, les 12 héros les plus distingués (par défaut) recevront des récompenses monétaires basées sur leurs classements et le nombre ajusté ci-dessous. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="Activer les revenus d'arène du joueur" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="Activer les revenus du classement des tournois d'arène pour le joueur. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="Récompense de base d'arène" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="Récompense de base pour les membres du top du classement d'arène. La première place obtient 2x ce montant, la dixième 0.5x. [Par défaut : 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="Nombre de classements d'arène" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="Nombre de membres du classement d'arène à récompenser (de 3 à 30). [Par défaut : 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="Activer l'augmentation des denars des villes" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="Activer l'augmentation des denars des villes. Les denars des villes seront augmentés en fonction du foyer du village. Formule : Montant vanilla (1000 denars) + niveau de foyer (par exemple 243) = 1243 denars quotidiens du village. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="Activer le boost de construction des seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="Activer le boost automatique de construction pour les établissements des seigneurs IA. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="Multiplicateur de boost de construction des seigneurs IA" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="Multiplicateur pour la vitesse de construction des bâtiments des seigneurs IA. Les valeurs plus élevées signifient une construction plus rapide. [Par défaut : 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="Pourcentage de denars que le seigneur de clan IA investira pour le boost de bâtiments" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="Pourcentage de l'or du seigneur de clan IA qu'ils investiront dans les boosts de bâtiments (0.0 = aucun, 100.0 = tout l'or). [Par défaut : 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="Activer la journalisation pertinente pour le joueur" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="Afficher les journaux pertinents pour le royaume du joueur. [Par défaut : faux]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="Journalisation pour le débogage" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="Journalisation pour le débogage. [Par défaut : désactivé]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="Revenus d'économie améliorée du chef du royaume" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="Revenus d'économie améliorée des villes" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="Revenus d'économie améliorée des châteaux" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="Revenus d'économie améliorée des villages" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="Revenus d'économie améliorée de l'arène" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="Revenus d'économie améliorée" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="Revenus quotidiens du héros :" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denars" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denars" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="Revenus quotidiens du clan :" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denars" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

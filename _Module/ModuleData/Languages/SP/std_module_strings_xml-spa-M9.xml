@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Español (LA)" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="Economía Mejorada para Señores IA" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="Configuraciones Principales" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="Configuraciones de Otros Miembros del Mismo Clan" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="Configuraciones de Otros Clanes Sin Feudos" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="Configuraciones de Caravanas" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="Configuraciones de Ingresos de Arena" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="Configuraciones de Ciudades" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="Configuraciones de Impulso de Construcción" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="Registro del Jugador" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="Configuraciones Técnicas" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		
+		<string id="IEFAIL_3IXOnv" text="Habilitar Esta Modificación" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="Habilitar esta modificación. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="Habilitar Ingresos del Jugador" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="Habilitar ingresos para Señores del Jugador. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="Multiplicador de Ingresos del Jugador" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="Multiplicador para ingresos del clan del jugador. Valores más bajos reducen los ingresos del jugador. [Predeterminado: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="Habilitar Ingresos de Ciudades de Señores IA" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="Habilitar ingresos de ciudades para Señores IA. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="Multiplicador de Ingresos en Denarios de Ciudad" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="Multiplicador para ingresos de prosperidad de ciudad. Si se establece en el valor predeterminado de 1.00, los ingresos de los Señores IA coincidirán con la descripción en la página de Nexus. [Predeterminado: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="Habilitar Ingresos de Castillos de Señores IA" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="Habilitar ingresos de castillos para Señores IA. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="Multiplicador de Ingresos en Denarios de Castillo" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="Multiplicador para ingresos de prosperidad de castillo. [Predeterminado: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="Habilitar Ingresos de Aldeas de Señores IA" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="Habilitar ingresos de aldeas para Señores IA. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="Multiplicador de Ingresos en Denarios de Aldea" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="Multiplicador para ingresos de hogar de aldea. Si se establece en el valor predeterminado de 1.00, los ingresos de los Señores IA coincidirán con la descripción en la página de Nexus. [Predeterminado: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="Considerar Habilidad de Comercio de Señores" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="Habilitar esto para considerar la habilidad de comercio de los Señores al calcular ingresos. Por ejemplo, habilidad de comercio de 75 aumentará los ingresos en un 37%. [Predeterminado: false]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="Otros Miembros del Clan Obtienen Ingresos" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="Cuando esta opción está habilitada, todos los otros miembros del clan (incluso no el líder del clan) obtendrán ingresos. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="Porcentaje de Ingresos de Otros Miembros del Clan" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="Porcentaje de ingresos de todos los otros miembros del clan. Predeterminado es 20% de lo que obtiene el líder del clan. [Predeterminado: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="Clanes Sin Feudos Obtienen Una Parte de Ingresos" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="Otros clanes sin feudos ganarán ingresos basados en la relación con el líder del reino y el líder del clan sin feudos. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="Porcentaje de Ingresos de Relación 0" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="Porcentaje de ingresos de miembros de clanes sin feudos cuando el líder del clan sin feudos tiene relación de 0 con el líder del reino. [Predeterminado: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="Porcentaje de Ingresos de Relación 30" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="Porcentaje de ingresos de miembros de clanes sin feudos cuando el líder del clan sin feudos tiene relación de 30 con el líder del reino. [Predeterminado: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="Porcentaje de Ingresos de Relación 60" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="Porcentaje de ingresos de miembros de clanes sin feudos cuando el líder del clan sin feudos tiene relación de 60 con el líder del reino. [Predeterminado: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="Porcentaje de Ingresos de Relación 100" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="Porcentaje de ingresos de miembros de clanes sin feudos cuando el líder del clan sin feudos tiene relación de 100 con el líder del reino. [Predeterminado: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="Cuánto Más Porcentaje Obtendrá el Líder del Clan" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="Porcentaje de ingresos del líder del clan sin feudos agregado después de calcular los porcentajes de relación anteriores. En configuración predeterminada, el líder del clan sin feudos ganará 50% más que otros miembros de su clan. [Predeterminado: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="Habilitar Caravanas de Señores IA" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Habilitar generación/manejo de caravanas de Señores IA. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="Cantidad de Tropas en Caravanas" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="Cantidad de tropas que tendrán las caravanas al crearse. [Predeterminado: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="Cantidad de Denarios en Caravanas" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="Cantidad de denarios que tendrán las caravanas al crearse. [Predeterminado: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="Habilitar Experiencia de Comercio de Señores IA" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="Habilitar experiencia de habilidad de comercio para señores IA con caravanas. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="XP de Comercio por Caravana Diaria" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="Cantidad base de experiencia de comercio por caravana que los señores IA reciben diariamente. [Predeterminado: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="Considerar Puntos de Enfoque para XP de Comercio" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="Cuando está habilitado, la experiencia de comercio de caravanas será afectada por puntos de enfoque y atributos. [Predeterminado: false]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Habilitar Ingresos de Arena de Señores IA" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Habilitar ingresos de tabla de clasificación de torneo de arena para Señores IA. Cada semana 12 (por defecto) héroes más distinguidos recibirán recompensas monetarias basadas en sus rankings y el número ajustado abajo. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="Habilitar Ingresos de Arena del Jugador" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="Habilitar ingresos de tabla de clasificación de torneo de arena para Jugador. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="Recompensa Base de Arena" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="Recompensa base para miembros del top de tabla de arena. El primer lugar obtiene 2x esta cantidad, el décimo lugar obtiene 0.5x. [Predeterminado: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="Cantidad de Tabla de Arena" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="Número de miembros de tabla de arena a recompensar (de 3 a 30). [Predeterminado: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="Habilitar Aumento de Denarios de Ciudades" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="Habilitar aumento de denarios de ciudades. Los denarios de ciudades serán aumentados basados en el hogar de la aldea. Fórmula: Cantidad vanilla (1000 denarios) + nivel de hogar (por ejemplo 243) = 1243 denarios diarios de aldea. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="Habilitar Impulso de Construcción de Señores IA" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="Habilitar impulso automático de construcción para asentamientos de señores IA. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="Multiplicador de Impulso de Construcción de Señores IA" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="Multiplicador para velocidad de construcción de edificios de señores IA. Valores más altos significan construcción más rápida. [Predeterminado: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="Porcentaje de Denarios que el Señor del Clan IA Invertirá para Impulso de Edificios" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="Porcentaje del oro del señor del clan IA que invertirán en impulsos de construcción (0.0 = ninguno, 100.0 = todo el oro). [Predeterminado: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="Habilitar Registro Relevante del Jugador" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="Mostrar registros relevantes para el reino del jugador. [Predeterminado: false]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="Registro para Depuración" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="Registro para depuración. [Predeterminado: deshabilitado]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="Ingresos de Economía Mejorada del Líder del Reino" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="Ingresos de Economía Mejorada de Ciudades" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="Ingresos de Economía Mejorada de Castillos" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="Ingresos de Economía Mejorada de Aldeas" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="Ingresos de Economía Mejorada de Arena" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="Ingresos de Economía Mejorada" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="Ingresos Diarios del Héroe:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denarios" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denarios" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="Ingresos Diarios del Clan:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denarios" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

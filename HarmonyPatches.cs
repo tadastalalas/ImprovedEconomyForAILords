@@ -80,15 +80,15 @@ namespace ImprovedEconomyForAILords
             int fromArena = ImprovedEconomyForAILordsBehavior.playerIncomeFromArenaLeaderboard;
 
             if (fromKingdomLeader > 0)
-                goldChange.Add(fromKingdomLeader, new TextObject("Improved Economy income from Kingdom Leader"), null);
+                goldChange.Add(fromKingdomLeader, new TextObject("{=IEFAIL_ZZHU48}Improved Economy income from Kingdom Leader"), null);
             if (fromTowns > 0)
-                goldChange.Add(fromTowns, new TextObject("Improved Economy income from Towns"), null);
+                goldChange.Add(fromTowns, new TextObject("{=IEFAIL_8AYbs7}Improved Economy income from Towns"), null);
             if (fromCastles > 0)
-                goldChange.Add(fromCastles, new TextObject("Improved Economy income from Castles"), null);
+                goldChange.Add(fromCastles, new TextObject("{=IEFAIL_Nfc05L}Improved Economy income from Castles"), null);
             if (fromVillages > 0)
-                goldChange.Add(fromVillages, new TextObject("Improved Economy income from Villages"), null);
+                goldChange.Add(fromVillages, new TextObject("{=IEFAIL_KYa6V7}Improved Economy income from Villages"), null);
             if (fromArena > 0)
-                goldChange.Add(fromArena, new TextObject("Improved Economy income from Arena"), null);
+                goldChange.Add(fromArena, new TextObject("{=IEFAIL_IK5Yhc}Improved Economy income from Arena"), null);
         }
     }
 }

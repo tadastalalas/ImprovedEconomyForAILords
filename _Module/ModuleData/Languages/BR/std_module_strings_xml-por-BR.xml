@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="Português (BR)" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="Economia Melhorada Para Senhores IA" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="Configurações Principais" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="Configurações de Outros Membros do Mesmo Clã" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="Configurações de Outros Clãs Sem Feudos" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="Configurações de Caravanas" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="Configurações de Receita da Arena" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="Configurações de Cidades" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="Configurações de Impulso de Construção" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="Registro do Jogador" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="Configurações Técnicas" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		<string id="IEFAIL_3IXOnv" text="Ativar Esta Modificação" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="Ativar esta modificação. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="Ativar Receita do Jogador" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="Ativar receita para Senhores Jogadores. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="Multiplicador de Receita do Jogador" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="Multiplicador para receita do clã do jogador. Valores menores reduzem a renda do jogador. [Padrão: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="Ativar Receita de Cidades dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="Ativar receita de cidades para Senhores IA. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="Multiplicador de Receita de Denários da Cidade" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="Multiplicador para renda de prosperidade da cidade. Se definido como o valor padrão de 1.00, a renda dos Senhores IA corresponderá à descrição na página do Nexus. [Padrão: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="Ativar Receita de Castelos dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="Ativar receita de castelos para Senhores IA. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="Multiplicador de Receita de Denários do Castelo" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="Multiplicador para renda de prosperidade do castelo. [Padrão: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="Ativar Receita de Vilas dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="Ativar receita de vilas para Senhores IA. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="Multiplicador de Receita de Denários da Vila" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="Multiplicador para renda de fogos da vila. Se definido como o valor padrão de 1.00, a renda dos Senhores IA corresponderá à descrição na página do Nexus. [Padrão: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="Considerar Habilidade de Comércio dos Senhores" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="Ative isso para considerar a habilidade de comércio dos Senhores ao calcular a receita. Por exemplo, habilidade de Comércio de 75 aumentará a receita em 37%. [Padrão: falso]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="Outros Membros do Clã Recebem Receita" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="Quando esta opção está ativada, todos os outros membros do clã (inclusive o líder do clã) receberão receita. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="Porcentagem de Receita de Outros Membros do Clã" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="Porcentagem de receita de todos os outros membros do clã. O padrão é 20% do que o líder do clã recebe. [Padrão: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="Clãs Sem Feudos Recebem Parte da Receita" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="Outros clãs sem feudos ganharão receita com base no relacionamento entre o líder do reino e o líder do clã sem feudos. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="Porcentagem de Receita com Relação 0" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="Porcentagem de receita dos membros de Clãs Sem Feudos quando o líder do clã sem feudos tem relação de 0 com o líder do reino. [Padrão: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="Porcentagem de Receita com Relação 30" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="Porcentagem de receita dos membros de Clãs Sem Feudos quando o líder do clã sem feudos tem relação de 30 com o líder do reino. [Padrão: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="Porcentagem de Receita com Relação 60" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="Porcentagem de receita dos membros de Clãs Sem Feudos quando o líder do clã sem feudos tem relação de 60 com o líder do reino. [Padrão: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="Porcentagem de Receita com Relação 100" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="Porcentagem de receita dos membros de Clãs Sem Feudos quando o líder do clã sem feudos tem relação de 100 com o líder do reino. [Padrão: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="Quanto a Mais em Porcentagem o Líder do Clã Receberá" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="Porcentagem de receita do líder de Clã sem feudos adicionada após as porcentagens de relacionamento acima serem calculadas. Na configuração padrão, o líder do clã sem feudos ganhará 50% a mais do que os outros membros do seu clã. [Padrão: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="Ativar Caravanas dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Ativar geração/gerenciamento de caravanas dos Senhores IA. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="Quantidade de Tropas das Caravanas" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="Quantidade de tropas que as caravanas terão quando criadas. [Padrão: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="Quantidade de Denários das Caravanas" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="Quantidade de denários que as caravanas terão quando criadas. [Padrão: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="Ativar Experiência de Comércio dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="Ativar experiência de habilidade de comércio para senhores IA com caravanas. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="XP de Comércio Por Caravana Diariamente" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="Quantidade base de experiência de comércio por caravana que os senhores IA recebem diariamente. [Padrão: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="Considerar Pontos de Foco Para XP de Comércio" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="Quando ativado, a experiência de comércio das caravanas será afetada por pontos de foco e atributos. [Padrão: falso]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Ativar Receita de Arena dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Ativar receita da tabela de classificação de torneios de arena para Senhores IA. Toda semana 12 (por padrão) heróis mais distintos receberão recompensas monetárias com base em suas classificações e número ajustado abaixo. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="Ativar Receita de Arena do Jogador" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="Ativar receita da tabela de classificação de torneios de arena para Jogador. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="Recompensa Base da Arena" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="Recompensa base para membros do topo da tabela de classificação da arena. O primeiro lugar recebe 2x essa quantidade, o 10º lugar recebe 0.5x. [Padrão: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="Contagem da Tabela de Classificação da Arena" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="Número de membros da tabela de classificação da arena para recompensar (de 3 a 30). [Padrão: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="Ativar Aumento de Denários das Cidades" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="Ativar aumento de denários das cidades. Os denários das cidades serão aumentados com base nos fogos da vila. Fórmula: Quantidade vanilla (1000 denários) + nível de fogos (por exemplo 243) = 1243 denários diários da vila. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="Ativar Impulso de Construção dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="Ativar impulso automático de construção para assentamentos dos senhores IA. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="Multiplicador de Impulso de Construção dos Senhores IA" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="Multiplicador para velocidade de construção dos senhores IA. Valores mais altos significam construção mais rápida. [Padrão: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="Denários em Porcentagem que o Senhor do Clã IA Investirá Para Impulso de Construções" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="Porcentagem do ouro do senhor do clã IA que será investido em impulsos de construção (0.0 = nenhum, 100.0 = todo o ouro). [Padrão: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="Ativar Registro Relevante ao Jogador" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="Mostrar registros relevantes ao reino do jogador. [Padrão: falso]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="Registro para Depuração" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="Registro para depuração. [Padrão: desativado]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="Renda de Economia Melhorada do Líder do Reino" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="Renda de Economia Melhorada de Cidades" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="Renda de Economia Melhorada de Castelos" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="Renda de Economia Melhorada de Vilas" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="Renda de Economia Melhorada da Arena" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="Renda de Economia Melhorada" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="Renda Diária do Herói:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} denários" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 denários" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="Renda Diária do Clã:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} denários" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>

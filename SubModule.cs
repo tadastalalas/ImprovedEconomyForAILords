@@ -45,14 +45,12 @@ namespace ImprovedEconomyForAILords
 
         public override void OnGameEnd(Game game)
         {
-            // Extract duplicate reflection logic into a helper method
             ClearEventListenersIfNeeded("DailyTickEvent");
             ClearEventListenersIfNeeded("WeeklyTickEvent");
 
             base.OnGameEnd(game);
         }
 
-        // Add this helper method to reduce duplication
         private void ClearEventListenersIfNeeded(string eventName)
         {
             var eventField = typeof(CampaignEvents).GetField($"{eventName}", BindingFlags.Static | BindingFlags.NonPublic);

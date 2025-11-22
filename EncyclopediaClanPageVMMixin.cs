@@ -35,7 +35,7 @@ namespace ImprovedEconomyForAILords
 
         public override void OnRefresh()
         {
-            IncomeText = new TextObject("Improved Economy Income").ToString();
+            IncomeText = new TextObject("{=IEFAIL_f8bJuu}Improved Economy Income").ToString();
             IncomeInfo.Clear();
 
             if (_clan is null || ViewModel is null)
@@ -47,13 +47,13 @@ namespace ImprovedEconomyForAILords
 
             if (behavior != null && behavior.ClanIncomeTotal.TryGetValue(_clan, out string clanIncome))
             {
-                var clanIncomeHeader = new TextObject("Daily Clan Income:");
-                IncomeInfo.AddPair(clanIncomeHeader, $"{clanIncome} denars");
+                var clanIncomeHeader = new TextObject("{=IEFAIL_wTWtND}Daily Clan Income:");
+                IncomeInfo.AddPair(clanIncomeHeader, new TextObject("{=IEFAIL_8zEqGF}{clanIncome} denars"));
             }
             else
             {
-                var clanIncomeHeader = new TextObject("Daily Clan Income:");
-                IncomeInfo.AddPair(clanIncomeHeader, "0 denars");
+                var clanIncomeHeader = new TextObject("{=IEFAIL_wTWtND}Daily Clan Income:");
+                IncomeInfo.AddPair(clanIncomeHeader, new TextObject("{=IEFAIL_Xywr4F}0 denars"));
             }
         }
     }

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="string">
+	<tags>
+		<tag language="简体中文" />
+	</tags>
+	<strings>
+		<string id="IEFAIL_WO2gdm" text="AI领主经济改进" /> <!--  -->
+		<string id="IEFAIL_BTTEQa" text="主要设置" /> <!--  -->
+		<string id="IEFAIL_zVBpU2" text="同一氏族其他成员设置" /> <!--  -->
+		<string id="IEFAIL_KPSPjv" text="无封地氏族设置" /> <!--  -->
+		<string id="IEFAIL_fyyCjf" text="商队设置" /> <!--  -->
+		<string id="IEFAIL_IijmV5" text="竞技场收入设置" /> <!--  -->
+		<string id="IEFAIL_udRISV" text="城镇设置" /> <!--  -->
+		<string id="IEFAIL_RwvFU8" text="建筑加速设置" /> <!--  -->
+		<string id="IEFAIL_cB54lB" text="玩家日志" /> <!--  -->
+		<string id="IEFAIL_ADa3ys" text="技术设置" /> <!--  -->
+		<string id="IEFAIL_MAgM85" text="" /> <!-- {=IEFAIL_MAgM85} -->
+		<string id="IEFAIL_Te5zBo" text="" /> <!-- {=IEFAIL_Te5zBo} -->
+		<string id="IEFAIL_3IXOnv" text="启用此模组" /> <!--  -->
+		<string id="IEFAIL_dn5p7T" text="启用此模组。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_4owJ8r" text="启用玩家收入" /> <!--  -->
+		<string id="IEFAIL_KWLmkq" text="为玩家领主启用收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_gBadtv" text="玩家收入倍率" /> <!--  -->
+		<string id="IEFAIL_zOjwvh" text="玩家氏族收入倍率。较低数值会减少玩家收入。[默认: 0.30]" /> <!--  -->
+		<string id="IEFAIL_K3lo31" text="启用AI领主城镇收入" /> <!--  -->
+		<string id="IEFAIL_uO5Akt" text="为AI领主启用城镇收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_qNOLon" text="城镇第纳尔收入倍率" /> <!--  -->
+		<string id="IEFAIL_hxX9ri" text="城镇繁荣收入倍率。若设为默认1.00，AI领主收入将与Nexus页面描述一致。[默认: 1.00]" /> <!--  -->
+		<string id="IEFAIL_5mR3zp" text="启用AI领主城堡收入" /> <!--  -->
+		<string id="IEFAIL_lACQz8" text="为AI领主启用城堡收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_Be1Tts" text="城堡第纳尔收入倍率" /> <!--  -->
+		<string id="IEFAIL_xE4L22" text="城堡繁荣收入倍率。[默认: 1.00]" /> <!--  -->
+		<string id="IEFAIL_fBmPe5" text="启用AI领主村庄收入" /> <!--  -->
+		<string id="IEFAIL_8wrURV" text="为AI领主启用村庄收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_FOjwIB" text="村庄第纳尔收入倍率" /> <!--  -->
+		<string id="IEFAIL_ydjRvC" text="村庄炉灶收入倍率。若设为默认1.00，AI领主收入将与Nexus页面描述一致。[默认: 1.00]" /> <!--  -->
+		<string id="IEFAIL_BoPM3k" text="考虑领主贸易技能" /> <!--  -->
+		<string id="IEFAIL_OAoKcv" text="启用后在计算收入时考虑领主贸易技能。例如贸易75会提高收入37%。[默认: false]" /> <!--  -->
+		<string id="IEFAIL_wwfNzO" text="氏族其他成员获得收入" /> <!--  -->
+		<string id="IEFAIL_T1H7z0" text="启用后氏族中其他成员也会获得收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_8urE1P" text="氏族其他成员收入百分比" /> <!--  -->
+		<string id="IEFAIL_4703gl" text="其他成员收入百分比。默认为氏族领袖收入的20%。[默认: 0.20]" /> <!--  -->
+		<string id="IEFAIL_LCRAH6" text="无封地氏族获得收入份额" /> <!--  -->
+		<string id="IEFAIL_1AyhZy" text="无封地氏族将根据与王国领袖及其氏族领袖的关系获得收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_c9l9FN" text="关系0时收入百分比" /> <!--  -->
+		<string id="IEFAIL_JoAUXL" text="关系为0时无封地氏族成员的收入百分比。[默认: 0.05]" /> <!--  -->
+		<string id="IEFAIL_VUVXkB" text="关系30时收入百分比" /> <!--  -->
+		<string id="IEFAIL_6osLoj" text="关系为30时无封地氏族成员的收入百分比。[默认: 0.10]" /> <!--  -->
+		<string id="IEFAIL_9yKPTN" text="关系60时收入百分比" /> <!--  -->
+		<string id="IEFAIL_q47Ow6" text="关系为60时无封地氏族成员的收入百分比。[默认: 0.15]" /> <!--  -->
+		<string id="IEFAIL_WbnLkQ" text="关系100时收入百分比" /> <!--  -->
+		<string id="IEFAIL_iV7jf9" text="关系为100时无封地氏族成员的收入百分比。[默认: 0.20]" /> <!--  -->
+		<string id="IEFAIL_VTwptk" text="氏族领袖额外收入倍率" /> <!--  -->
+		<string id="IEFAIL_pGAU00" text="计算关系百分比后给予无封地氏族领袖的额外收入倍率。默认其比成员多50%。[默认: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rgVmYA" text="启用AI领主商队" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="启用AI领主商队生成与管理。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_USwg4A" text="商队兵力数量" /> <!--  -->
+		<string id="IEFAIL_kZKaW2" text="商队创建时的兵力数量。[默认: 30]" /> <!--  -->
+		<string id="IEFAIL_DYTASs" text="商队第纳尔数量" /> <!--  -->
+		<string id="IEFAIL_1Ek9CH" text="商队创建时的第纳尔数量。[默认: 8520]" /> <!--  -->
+		<string id="IEFAIL_Kiyniz" text="启用AI领主贸易经验" /> <!--  -->
+		<string id="IEFAIL_ZcELyJ" text="为拥有商队的AI领主启用贸易技能经验。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_NKMFnq" text="单个商队每日贸易经验" /> <!--  -->
+		<string id="IEFAIL_6wOF90" text="AI领主每日每个商队获得的基础贸易经验值。[默认: 15]" /> <!--  -->
+		<string id="IEFAIL_1Kn8ZV" text="贸易经验考虑专精点" /> <!--  -->
+		<string id="IEFAIL_lUfWn9" text="启用后商队贸易经验受专精点与属性影响。[默认: false]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="启用AI领主竞技场收入" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="启用AI领主竞技场锦标赛排行榜收入。每周（默认12名）按排名与下方调整值发放奖励。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_n5p2Xp" text="启用玩家竞技场收入" /> <!--  -->
+		<string id="IEFAIL_v6mbdQ" text="启用玩家竞技场锦标赛排行榜收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_LWsF6y" text="竞技场基础奖励" /> <!--  -->
+		<string id="IEFAIL_v7Fo3j" text="排行榜成员基础奖励。第1名得2倍，第10名得0.5倍。[默认: 12460]" /> <!--  -->
+		<string id="IEFAIL_AMlJaO" text="竞技场排行榜人数" /> <!--  -->
+		<string id="IEFAIL_ePuYiy" text="发放奖励的排行榜人数（3至30）。[默认: 12]" /> <!--  -->
+		<string id="IEFAIL_V4JjrL" text="启用城镇第纳尔增加" /> <!--  -->
+		<string id="IEFAIL_uEtPPL" text="启用城镇第纳尔增加。依据村庄炉灶数增长。公式：原始(1000) + 炉灶数(例243) = 1243每日第纳尔。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_G84W1z" text="启用AI领主建筑加速" /> <!--  -->
+		<string id="IEFAIL_odBTq0" text="启用AI领主聚落自动建筑加速。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_KhxdZq" text="AI领主建筑加速倍率" /> <!--  -->
+		<string id="IEFAIL_EITu0G" text="AI领主建筑建造速度倍率。越高越快。[默认: 1.50]" /> <!--  -->
+		<string id="IEFAIL_rjeGzF" text="AI氏族领主建筑加速投资比例" /> <!--  -->
+		<string id="IEFAIL_f775tL" text="用于建筑加速的金币百分比（0.0=无，100.0=全部）。[默认: 10.0]" /> <!--  -->
+		<string id="IEFAIL_6UGGcL" text="启用与玩家相关日志" /> <!--  -->
+		<string id="IEFAIL_Ju7EwW" text="显示与玩家王国相关的日志。[默认: false]" /> <!--  -->
+		<string id="IEFAIL_BM0QvR" text="调试日志" /> <!--  -->
+		<string id="IEFAIL_qAsIl8" text="用于调试的日志。[默认: disabled]" /> <!--  -->
+		<string id="IEFAIL_bLQ6lK" text="" /> <!-- {=IEFAIL_bLQ6lK} -->
+		<string id="IEFAIL_ZZHU48" text="改进经济来自王国领袖的收入" /> <!--  -->
+		<string id="IEFAIL_8AYbs7" text="改进经济来自城镇的收入" /> <!--  -->
+		<string id="IEFAIL_Nfc05L" text="改进经济来自城堡的收入" /> <!--  -->
+		<string id="IEFAIL_KYa6V7" text="改进经济来自村庄的收入" /> <!--  -->
+		<string id="IEFAIL_IK5Yhc" text="改进经济来自竞技场的收入" /> <!--  -->
+		<string id="IEFAIL_f8bJuu" text="改进经济总收入" /> <!--  -->
+		<string id="IEFAIL_Rk2wHb" text="英雄每日收入:" /> <!--  -->
+		<string id="IEFAIL_ys0YLH" text="{heroIncome} 第纳尔" /> <!--  -->
+		<string id="IEFAIL_Xywr4F" text="0 第纳尔" /> <!--  -->
+		<string id="IEFAIL_wTWtND" text="氏族每日收入:" /> <!--  -->
+		<string id="IEFAIL_8zEqGF" text="{clanIncome} 第纳尔" /> <!--  -->
+		<string id="IEFAIL_aIzs9E" text="" /> <!-- {=IEFAIL_aIzs9E} -->
+		<string id="IEFAIL_AS7Ctk" text="" /> <!-- {=IEFAIL_AS7Ctk} -->
+		<string id="IEFAIL_iWr3Js" text="" /> <!-- {=IEFAIL_iWr3Js} -->
+		<string id="IEFAIL_5lkR7w" text="" /> <!-- {=IEFAIL_5lkR7w} -->
+		<string id="IEFAIL_CScxPo" text="" /> <!-- {=IEFAIL_CScxPo} -->
+		<string id="IEFAIL_54GlEW" text="" /> <!-- {=IEFAIL_54GlEW} -->
+		<string id="IEFAIL_looyP6" text="" /> <!-- {=IEFAIL_looyP6} -->
+		<string id="IEFAIL_ku2cDq" text="" /> <!-- {=IEFAIL_ku2cDq} -->
+	</strings>
+</base>
