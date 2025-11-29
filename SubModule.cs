@@ -121,6 +121,7 @@ namespace ImprovedEconomyForAILords
             CampaignEvents.WeeklyTickEvent.AddNonSerializedListener(this, new Action(OnWeeklyTickEvent));
             CampaignEvents.MobilePartyDestroyed.AddNonSerializedListener(this, new Action<MobileParty, PartyBase>(OnMobilePartyDestroyed));
             CampaignEvents.OnNewGameCreatedEvent.AddNonSerializedListener(this, new Action<CampaignGameStarter>(this.OnNewGameCreatedEvent));
+            CampaignEvents.OnClanDestroyedEvent.AddNonSerializedListener(this, new Action<Clan>(OnClanDestroyedEvent));
         }
 
         private void OnDailyTickEvent()
@@ -177,6 +178,26 @@ namespace ImprovedEconomyForAILords
         private void OnNewGameCreatedEvent(CampaignGameStarter starter)
         {
             _lordInvestmentTracker.Clear();
+        }
+
+        private void OnClanDestroyedEvent(Clan destroyedClan)
+        {
+            if (!settings.EnableAILordsCaravans)
+                return;
+
+            if (destroyedClan == null || destroyedClan.Leader == null)
+                return;
+
+            Hero clanLeader = destroyedClan.Leader;
+            int ownedCaravansCount = clanLeader.OwnedCaravans.Count;
+
+            if (ownedCaravansCount <= 0)
+                return;
+
+            if (settings.LoggingEnabled)
+                LogMessage($"Clan {destroyedClan.Name} was eliminated. Removing {ownedCaravansCount} caravan(s) from {clanLeader.Name}", Colors.Red);
+
+            RemoveExcessCaravansForHero(clanLeader, ownedCaravansCount, 0);
         }
 
         private void ProcessDenarsRevenueForAILords()
