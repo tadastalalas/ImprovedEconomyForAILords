@@ -48,6 +48,7 @@ namespace ImprovedEconomyForAILords
             if (behavior != null && behavior.ClanIncomeTotal.TryGetValue(_clan, out string clanIncome))
             {
                 var clanIncomeHeader = new TextObject("{=IEFAIL_wTWtND}Daily Clan Income:");
+                MBTextManager.SetTextVariable("clanIncome", clanIncome);
                 IncomeInfo.AddPair(clanIncomeHeader, new TextObject("{=IEFAIL_8zEqGF}{clanIncome} denars"));
             }
             else

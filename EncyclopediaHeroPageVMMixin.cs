@@ -48,6 +48,7 @@ namespace ImprovedEconomyForAILords
             if (behavior != null && behavior.HeroIncomeTotal.TryGetValue(_hero, out string heroIncome))
             {
                 var heroIncomeHeader = new TextObject("{=IEFAIL_Rk2wHb}Daily Hero Income:");
+                MBTextManager.SetTextVariable("heroIncome", heroIncome);
                 IncomeInfo.AddPair(heroIncomeHeader, new TextObject("{=IEFAIL_ys0YLH}{heroIncome} denars"));
             }
             else

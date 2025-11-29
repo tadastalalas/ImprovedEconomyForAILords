@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
+using Helpers;
 using MCM.Abstractions.Base.Global;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.Actions;
@@ -659,10 +660,11 @@ namespace ImprovedEconomyForAILords
                 return;
             }
 
-            int caravansTroopsAmount = settings.CaravansTroopsAmount;
+            // int caravansTroopsAmount = settings.CaravansTroopsAmount;
             int caravansDenarsAmount = settings.CaravansDenarsAmount;
 
-            MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, false, null, null, caravansTroopsAmount, true);
+            PartyTemplateObject randomCaravanTemplate = CaravanHelper.GetRandomCaravanTemplate(hero.Culture, true, true);
+            MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, randomCaravanTemplate, false, null, null, true);
             caravanParty.PartyTradeGold = caravansDenarsAmount;
             caravanParty.InitializePartyTrade(caravansDenarsAmount);
         }
