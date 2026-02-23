@@ -54,7 +54,7 @@
 		<string id="IEFAIL_VTwptk" text="클랜 리더가 얻을 비율이 얼마나 더 많은가" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="위의 관계 비율이 계산된 후 추가되는 영지가 없는 클랜 리더의 수입 비율. 기본 설정에서 영지가 없는 클랜 리더는 다른 클랜 멤버보다 50% 더 많이 벌게 됩니다. [기본값: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="AI 영주의 캐러밴 활성화" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="AI 영주의 캐러밴 생성/처리를 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="AI 영주의 캐러밴 생성/처리를 활성화합니다. [기본값: false]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="캐러밴 병력 수량" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="생성 시 캐러밴이 가질 병력의 수량. [기본값: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="캐러밴 데나 수량" /> <!--  -->

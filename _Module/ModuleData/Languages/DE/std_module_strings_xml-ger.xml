@@ -54,7 +54,7 @@
 		<string id="IEFAIL_VTwptk" text="Wie viel mehr Prozentsatz der Clan-Leader erhält" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="Einnahmen-Prozentsatz des lehenlosen Clan-Leaders, der nach der Berechnung der obigen Beziehungs-Prozentsätze hinzugefügt wird. In der Standardeinstellung erhält der lehenlose Clan-Leader 50% mehr als seine anderen Clan-Mitglieder. [Standard: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="Karawanen für KI-Lords aktivieren" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="Erzeugen/Verwalten von Karawanen der KI-Lords aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Erzeugen/Verwalten von Karawanen der KI-Lords aktivieren. [Standard: falsch]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="Anzahl der Truppen in Karawanen" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="Anzahl der Truppen, die Karawanen bei der Erstellung haben. [Standard: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="Anzahl der Denare in Karawanen" /> <!--  -->

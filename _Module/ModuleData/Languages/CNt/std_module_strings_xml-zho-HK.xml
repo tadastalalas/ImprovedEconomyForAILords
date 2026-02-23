@@ -54,7 +54,7 @@
 		<string id="IEFAIL_VTwptk" text="氏族領袖額外收入倍率" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="計算關係百分比後，無封地主氏族領袖的額外收入倍率。預設領袖比成員多50%。 [預設: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="啟用AI領主商隊" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="啟用AI領主商隊生成與管理。 [預設: true]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="啟用AI領主商隊生成與管理。 [預設: false]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="商隊兵力數量" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="商隊建立時的兵力數量。 [預設: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="商隊第納爾數量" /> <!--  -->

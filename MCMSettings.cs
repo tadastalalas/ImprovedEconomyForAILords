@@ -91,9 +91,9 @@ namespace ImprovedEconomyForAILords
 
 
         // AI Lords' caravans settings
-        [SettingPropertyBool("{=IEFAIL_rgVmYA}Enable AI Lords' Caravans", Order = 0, RequireRestart = false, HintText = "{=IEFAIL_8ol5a2}Enable spawning/handling caravans of AI Lords. [Default: true]")]
+        [SettingPropertyBool("{=IEFAIL_rgVmYA}Enable AI Lords' Caravans", Order = 0, RequireRestart = false, HintText = "{=IEFAIL_8ol5a2}Enable spawning/handling caravans of AI Lords. [Default: false]")]
         [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
-        public bool EnableAILordsCaravans { get; set; } = true;
+        public bool EnableAILordsCaravans { get; set; } = false;
         /*
         [SettingPropertyInteger("{=IEFAIL_USwg4A}Caravans Troops Amount", 10, 100, Order = 1, RequireRestart = false, HintText = "{=IEFAIL_kZKaW2}Amount of troops caravans will have when created. [Default: 30]")]
         [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]

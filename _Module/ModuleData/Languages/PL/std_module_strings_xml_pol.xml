@@ -54,7 +54,7 @@
 		<string id="IEFAIL_VTwptk" text="O Ile Więcej Procentu Otrzyma Lider Klanu" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="Procent dochodu lidera klanu bez len dodany po obliczeniu powyższych procentów relacji. W domyślnych ustawieniach lider klanu bez len zarobi 50% więcej niż inni członkowie jego klanu. [Domyślnie: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="Włącz Karawany Lordów AI" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="Włącz tworzenie/obsługę karawan Lordów AI. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Włącz tworzenie/obsługę karawan Lordów AI. [Domyślnie: false]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="Ilość Wojsk w Karawanach" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="Ilość wojsk, które karawany będą miały przy tworzeniu. [Domyślnie: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="Ilość Denarów w Karawanach" /> <!--  -->

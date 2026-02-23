@@ -53,7 +53,7 @@
 		<string id="IEFAIL_VTwptk" text="How Much More Percentage Clan Leader Will Get" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="Fiefless Clan leader revenue percentage added after above relationship percentages are calculated. In default setting fiefless clan leader will earn 50% more than other his clan members. [Default: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="Enable AI Lords' Caravans" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="Enable spawning/handling caravans of AI Lords. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Enable spawning/handling caravans of AI Lords. [Default: false]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="Caravans Troops Amount" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="Amount of troops caravans will have when created. [Default: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="Caravans Denars Amount" /> <!--  -->

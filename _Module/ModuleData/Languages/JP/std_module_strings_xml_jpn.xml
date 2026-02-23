@@ -54,7 +54,7 @@
 		<string id="IEFAIL_VTwptk" text="クランリーダーが得る割合がどれだけ多いか" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="上記の関係割合が計算された後に追加される封土のないクランリーダーの収入割合。デフォルト設定では、封土のないクランリーダーは他のクランメンバーよりも50%多く稼ぐ。[デフォルト: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="AI領主のキャラバンを有効にする" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="AI領主のキャラバンの生成/処理を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="AI領主のキャラバンの生成/処理を有効にする。[デフォルト: false]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="キャラバン部隊数" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="作成時にキャラバンが持つ部隊の数。[デフォルト: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="キャラバンデナー数" /> <!--  -->

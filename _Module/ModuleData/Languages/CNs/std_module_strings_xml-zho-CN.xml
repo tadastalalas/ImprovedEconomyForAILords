@@ -53,7 +53,7 @@
 		<string id="IEFAIL_VTwptk" text="氏族领袖额外收入倍率" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="计算关系百分比后给予无封地氏族领袖的额外收入倍率。默认其比成员多50%。[默认: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="启用AI领主商队" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="启用AI领主商队生成与管理。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="启用AI领主商队生成与管理。[默认: false]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="商队兵力数量" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="商队创建时的兵力数量。[默认: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="商队第纳尔数量" /> <!--  -->

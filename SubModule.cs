@@ -503,7 +503,10 @@ namespace ImprovedEconomyForAILords
                 payment = (int)(payment * fieflessClanMembersRevenueMultiplier);
                 clanMembersWithoutFiefsGotPaid += payment;
             }
-            hero.ChangeHeroGold(payment);
+            if (hero != Hero.MainHero)
+            {
+                hero.ChangeHeroGold(payment);
+            }
             return payment;
         }
 
@@ -768,7 +771,10 @@ namespace ImprovedEconomyForAILords
                         reward = (int)(reward * settings.PlayerRevenueMultiplier);
                     }
 
-                    hero.ChangeHeroGold(reward);
+                    if (hero != Hero.MainHero)
+                    {
+                        hero.ChangeHeroGold(reward);
+                    }
 
                     if (hero == Hero.MainHero)
                         playerIncomeFromArenaLeaderboard = reward;

@@ -53,7 +53,7 @@
 		<string id="IEFAIL_VTwptk" text="Quanto a Mais em Porcentagem o Líder do Clã Receberá" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="Porcentagem de receita do líder de Clã sem feudos adicionada após as porcentagens de relacionamento acima serem calculadas. Na configuração padrão, o líder do clã sem feudos ganhará 50% a mais do que os outros membros do seu clã. [Padrão: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="Ativar Caravanas dos Senhores IA" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="Ativar geração/gerenciamento de caravanas dos Senhores IA. [Padrão: verdadeiro]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Ativar geração/gerenciamento de caravanas dos Senhores IA. [Padrão: falso]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="Quantidade de Tropas das Caravanas" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="Quantidade de tropas que as caravanas terão quando criadas. [Padrão: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="Quantidade de Denários das Caravanas" /> <!--  -->

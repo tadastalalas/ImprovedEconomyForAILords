@@ -54,7 +54,7 @@
 		<string id="IEFAIL_VTwptk" text="Quanto Più Percentuale Otterrà il Leader del Clan" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="Percentuale entrate leader clan senza feudi aggiunta dopo il calcolo delle percentuali di relazione sopra. Nelle impostazioni predefinite il leader del clan senza feudi guadagnerà 50% in più rispetto agli altri suoi membri del clan. [Predefinito: 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="Abilita Carovane Signori IA" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="Abilita generazione/gestione carovane dei Signori IA. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Abilita generazione/gestione carovane dei Signori IA. [Predefinito: falso]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="Quantità Truppe Carovane" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="Quantità di truppe che le carovane avranno quando create. [Predefinito: 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="Quantità Denari Carovane" /> <!--  -->

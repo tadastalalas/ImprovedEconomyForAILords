@@ -54,7 +54,7 @@
 		<string id="IEFAIL_VTwptk" text="Combien de pourcentage supplémentaire le chef de clan obtiendra" /> <!--  -->
 		<string id="IEFAIL_pGAU00" text="Pourcentage des revenus du chef de clan sans fief ajouté après le calcul des pourcentages de relation ci-dessus. Dans les paramètres par défaut, le chef de clan sans fief gagnera 50% de plus que ses autres membres du clan. [Par défaut : 1.50]" /> <!--  -->
 		<string id="IEFAIL_rgVmYA" text="Activer les caravanes des seigneurs IA" /> <!--  -->
-		<string id="IEFAIL_8ol5a2" text="Activer la génération/gestion des caravanes des seigneurs IA. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_8ol5a2" text="Activer la génération/gestion des caravanes des seigneurs IA. [Par défaut : faux]" /> <!--  -->
 		<string id="IEFAIL_USwg4A" text="Quantité de troupes des caravanes" /> <!--  -->
 		<string id="IEFAIL_kZKaW2" text="Quantité de troupes que les caravanes auront lors de leur création. [Par défaut : 30]" /> <!--  -->
 		<string id="IEFAIL_DYTASs" text="Quantité de denars des caravanes" /> <!--  -->
