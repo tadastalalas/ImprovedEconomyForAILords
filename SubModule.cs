@@ -230,6 +230,12 @@ namespace ImprovedEconomyForAILords
             ClanIncomeTotal.Clear();
             HeroIncomeTotal.Clear();
 
+            _currentDenarsRevenueMultiplierFromTown = settings.DenarsRevenueMultiplierFromTown;
+            _currentDenarsRevenueMultiplierFromCastle = settings.DenarsRevenueMultiplierFromCastle;
+            _currentDenarsRevenueMultiplierFromVillage = settings.DenarsRevenueMultiplierFromVillage;
+            _currentOtherSameClanMembersRevenueMultiplier = settings.OtherSameClanMembersRevenueMultiplier;
+            _currentFieflessClanLeaderRevenueMultiplier = settings.FieflessClanLeaderRevenueMultiplier;
+
             Dictionary<Clan, int> clanIncomeTracker = new Dictionary<Clan, int>();
             Dictionary<Hero, int> heroIncomeTracker = new Dictionary<Hero, int>();
 
@@ -376,9 +382,9 @@ namespace ImprovedEconomyForAILords
                 return;
 
             float relation = clan.Leader.GetRelation(kingdomLeader);
-            fieflessClanMembersRevenueMultiplier = GetFieflessRevenueMultiplier(relation);
+            float localFieflessClanMembersRevenueMultiplier = GetFieflessRevenueMultiplier(relation);
 
-            if (fieflessClanMembersRevenueMultiplier <= 0f)
+            if (localFieflessClanMembersRevenueMultiplier <= 0f)
                 return;
 
             foreach (var fief in kingdomLeader.Clan.Fiefs)
@@ -435,26 +441,25 @@ namespace ImprovedEconomyForAILords
             return settings.Relation100RevenueMultiplier;
         }
 
-        float denarsRevenueMultiplierFromTown = settings.DenarsRevenueMultiplierFromTown;
-        float denarsRevenueMultiplierFromCastle = settings.DenarsRevenueMultiplierFromCastle;
-        float denarsRevenueMultiplierFromVillage = settings.DenarsRevenueMultiplierFromVillage;
-        float otherSameClanMembersRevenueMultiplier = settings.OtherSameClanMembersRevenueMultiplier;
-        float fieflessClanLeaderRevenueMultiplier = settings.FieflessClanLeaderRevenueMultiplier;
-        float fieflessClanMembersRevenueMultiplier = 0f;
+        private float _currentDenarsRevenueMultiplierFromTown;
+        private float _currentDenarsRevenueMultiplierFromCastle;
+        private float _currentDenarsRevenueMultiplierFromVillage;
+        private float _currentOtherSameClanMembersRevenueMultiplier;
+        private float _currentFieflessClanLeaderRevenueMultiplier;
 
-        private void ApplyFiefDenarsBonusForHero(Hero hero, Town town, bool IsFiefACastle, bool IsClanLeader, bool HasFief)
+        private void ApplyFiefDenarsBonusForHero(Hero hero, Town town, bool IsFiefACastle, bool IsClanLeader, bool HasFief, float fieflessMult = 1f)
         {
             if (!settings.EnableAILordsTownsRevenue && !settings.EnableAILordsCastlesRevenue)
                 return;
 
             int basePayment = (int)((CalculateFiefDenarsPayment(town) * ConsiderLordsTradeSkill(hero, settings)));
-            basePayment = (int)(basePayment * (IsFiefACastle ? denarsRevenueMultiplierFromCastle : denarsRevenueMultiplierFromTown));
+            basePayment = (int)(basePayment * (IsFiefACastle ? _currentDenarsRevenueMultiplierFromCastle : _currentDenarsRevenueMultiplierFromTown));
 
             int actualPayment = ProcessPaymentForHero(hero, basePayment, IsFiefACastle, IsClanLeader, HasFief, false);
             UpdatePaymentAggregation(hero, actualPayment, IsFiefACastle, isVillage: false);
         }
 
-        private void ApplyVillageDenarsBonusForHero(Hero hero, Town fief, bool IsClanLeader, bool HasFief)
+        private void ApplyVillageDenarsBonusForHero(Hero hero, Town fief, bool IsClanLeader, bool HasFief, float fieflessMult = 1f)
         {
             if (!settings.EnableAILordsVillagesRevenue)
                 return;
@@ -462,7 +467,7 @@ namespace ImprovedEconomyForAILords
             foreach (Village village in fief.Villages)
             {
                 int basePayment = (int)((CalculateVillageDenarsPayment(village) * ConsiderLordsTradeSkill(hero, settings))
-                    * denarsRevenueMultiplierFromVillage);
+                    * _currentDenarsRevenueMultiplierFromVillage);
 
                 int actualPayment = ProcessPaymentForHero(hero, basePayment, false, IsClanLeader, HasFief, true);
                 UpdatePaymentAggregation(hero, actualPayment, false, isVillage: true);
@@ -470,7 +475,7 @@ namespace ImprovedEconomyForAILords
         }
 
         private int ProcessPaymentForHero(Hero hero, int basePayment, bool isFiefACastle,
-            bool isClanLeader, bool hasFief, bool isVillage)
+            bool isClanLeader, bool hasFief, bool isVillage, float fieflessMult = 1f)
         {
             int payment = basePayment;
 
@@ -488,19 +493,19 @@ namespace ImprovedEconomyForAILords
             }
             else if (!isClanLeader && hasFief)
             {
-                payment = (int)(payment * otherSameClanMembersRevenueMultiplier);
+                payment = (int)(payment * _currentOtherSameClanMembersRevenueMultiplier);
                 clanMembersWithFiefsGotPaid += payment;
             }
             else if (isClanLeader && !hasFief)
             {
-                payment = (int)(payment * fieflessClanMembersRevenueMultiplier * fieflessClanLeaderRevenueMultiplier);
+                payment = (int)(payment * fieflessMult * _currentFieflessClanLeaderRevenueMultiplier);
                 clanLeadersWithoutFiefsGotPaid += payment;
                 if (hero == Hero.MainHero)
                     CalculateHowMuchRevenuePlayerGets(payment, hero, isFiefACastle, isClanLeader, hasFief, isVillage);
             }
             else if (!isClanLeader && !hasFief)
             {
-                payment = (int)(payment * fieflessClanMembersRevenueMultiplier);
+                payment = (int)(payment * fieflessMult);
                 clanMembersWithoutFiefsGotPaid += payment;
             }
             if (hero != Hero.MainHero)
@@ -1159,7 +1164,6 @@ namespace ImprovedEconomyForAILords
             {
                 if (dataStore.IsLoading)
                 {
-                    // Load as simple string
                     string savedDataString = "";
                     dataStore.SyncData("AILordsInvestmentString", ref savedDataString);
 
@@ -1168,34 +1172,31 @@ namespace ImprovedEconomyForAILords
 
                     if (!string.IsNullOrEmpty(savedDataString))
                     {
-                        // Parse the string: "heroId1:settlement1,settlement2|heroId2:settlement3,settlement4"
                         var heroEntries = savedDataString.Split('|');
                         foreach (var heroEntry in heroEntries)
                         {
                             if (string.IsNullOrEmpty(heroEntry)) continue;
 
                             var parts = heroEntry.Split(':');
-                            if (parts.Length == 2)
-                            {
-                                string heroId = parts[0];
-                                var settlements = parts[1].Split(',');
+                            if (parts.Length != 2 || string.IsNullOrEmpty(parts[0]))
+                                continue;
 
-                                if (!string.IsNullOrEmpty(heroId))
-                                {
-                                    _lordInvestmentTracker[heroId] = new HashSet<string>(settlements.Where(s => !string.IsNullOrEmpty(s)));
-                                }
-                            }
+                            string heroId = parts[0];
+                            var settlements = parts[1].Split(',')
+                                .Where(s => !string.IsNullOrEmpty(s))
+                                .ToHashSet();
+
+                            if (settlements.Count > 0)
+                                _lordInvestmentTracker[heroId] = settlements;
+
                         }
 
                         if (settings.LoggingEnabled)
-                        {
                             LogMessage($"Loaded {_lordInvestmentTracker.Count} AI lord records from string", Colors.Green);
-                        }
                     }
                 }
                 else
                 {
-                    // Save as simple string
                     string dataToSave = "";
 
                     if (_lordInvestmentTracker.Count > 0)
@@ -1205,8 +1206,15 @@ namespace ImprovedEconomyForAILords
                         {
                             if (!string.IsNullOrEmpty(kvp.Key) && kvp.Value.Count > 0)
                             {
-                                string settlements = string.Join(",", kvp.Value);
-                                heroEntries.Add($"{kvp.Key}:{settlements}");
+                                bool heroExists = Hero.AllAliveHeroes.Any(h => h.StringId == kvp.Key);
+                                if (!heroExists) continue;
+
+                                var validSettlements = kvp.Value
+                                    .Where(sid => Settlement.All.Any(s => s.StringId == sid))
+                                    .ToList();
+
+                                if (validSettlements.Count > 0)
+                                    heroEntries.Add($"{kvp.Key}:{string.Join(",", validSettlements)}");
                             }
                         }
                         dataToSave = string.Join("|", heroEntries);
@@ -1215,17 +1223,13 @@ namespace ImprovedEconomyForAILords
                     dataStore.SyncData("AILordsInvestmentString", ref dataToSave);
 
                     if (settings.LoggingEnabled)
-                    {
                         LogMessage($"Saved investment data as string (length: {dataToSave.Length})", Colors.Green);
-                    }
                 }
             }
             catch (Exception ex)
             {
                 if (settings.LoggingEnabled)
-                {
                     LogMessage($"String-based sync error: {ex.Message}", Colors.Red);
-                }
 
                 if (dataStore.IsLoading)
                 {
