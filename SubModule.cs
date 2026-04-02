@@ -111,6 +111,7 @@ namespace ImprovedEconomyForAILords
         private readonly Dictionary<string, HashSet<string>> _lordInvestmentTracker = new();
 
         private bool _hasValidatedInvestmentData = false;
+        private bool _caravanCleanupDone = false;
 
         public readonly Dictionary<Clan, string> ClanIncomeTotal = new();
         public readonly Dictionary<Hero, string> HeroIncomeTotal = new();
@@ -119,7 +120,7 @@ namespace ImprovedEconomyForAILords
         {
             CampaignEvents.DailyTickEvent.AddNonSerializedListener(this, new Action(OnDailyTickEvent));
             CampaignEvents.WeeklyTickEvent.AddNonSerializedListener(this, new Action(OnWeeklyTickEvent));
-            CampaignEvents.MobilePartyDestroyed.AddNonSerializedListener(this, new Action<MobileParty, PartyBase>(OnMobilePartyDestroyed));
+            //CampaignEvents.MobilePartyDestroyed.AddNonSerializedListener(this, new Action<MobileParty, PartyBase>(OnMobilePartyDestroyed));
             CampaignEvents.OnNewGameCreatedEvent.AddNonSerializedListener(this, new Action<CampaignGameStarter>(this.OnNewGameCreatedEvent));
             CampaignEvents.OnClanDestroyedEvent.AddNonSerializedListener(this, new Action<Clan>(OnClanDestroyedEvent));
         }
@@ -128,6 +129,12 @@ namespace ImprovedEconomyForAILords
         {
             if (!settings.EnableThisModification)
                 return;
+
+            if (!_caravanCleanupDone)
+            {
+                RemoveAllModSpawnedCaravans();
+                _caravanCleanupDone = true;
+            }
 
             if (!_hasValidatedInvestmentData)
             {
@@ -153,12 +160,14 @@ namespace ImprovedEconomyForAILords
             if (!settings.EnableThisModification)
                 return;
 
-            HandleCaravansForAI();
+            //HandleCaravansForAI();
             HandleArenaLeadersForAI();
         }
 
+        
         private void OnMobilePartyDestroyed(MobileParty mobileParty, PartyBase destroyerParty)
         {
+            /*
             if (!settings.EnableAILordsCaravans)
                 return;
             if (mobileParty?.PartyComponent?.Leader == null)
@@ -173,7 +182,9 @@ namespace ImprovedEconomyForAILords
 
             if (ownedCaravansCount > 0)
                 RemoveExcessCaravansForHero(destroyedPartyLeader, ownedCaravansCount, 0);
+            */
         }
+
 
         private void OnNewGameCreatedEvent(CampaignGameStarter starter)
         {
@@ -182,6 +193,7 @@ namespace ImprovedEconomyForAILords
 
         private void OnClanDestroyedEvent(Clan destroyedClan)
         {
+            /*
             if (!settings.EnableAILordsCaravans)
                 return;
 
@@ -198,6 +210,22 @@ namespace ImprovedEconomyForAILords
                 LogMessage($"Clan {destroyedClan.Name} was eliminated. Removing {ownedCaravansCount} caravan(s) from {clanLeader.Name}", Colors.Red);
 
             RemoveExcessCaravansForHero(clanLeader, ownedCaravansCount, 0);
+            */
+        }
+
+        private void RemoveAllModSpawnedCaravans()
+        {
+            foreach (Hero hero in Hero.AllAliveHeroes.ToList())
+            {
+                if (hero == Hero.MainHero || !hero.IsClanLeader || hero.Clan == null)
+                    continue;
+
+                int ownedCaravansCount = hero.OwnedCaravans.Count;
+                if (ownedCaravansCount <= 0)
+                    continue;
+
+                RemoveExcessCaravansForHero(hero, ownedCaravansCount, 0);
+            }
         }
 
         private void ProcessDenarsRevenueForAILords()
@@ -1165,6 +1193,7 @@ namespace ImprovedEconomyForAILords
                 if (dataStore.IsLoading)
                 {
                     string savedDataString = "";
+                    dataStore.SyncData("AILordsCaravanCleanupDone", ref _caravanCleanupDone);
                     dataStore.SyncData("AILordsInvestmentString", ref savedDataString);
 
                     _lordInvestmentTracker.Clear();
