@@ -145,8 +145,8 @@ namespace ImprovedEconomyForAILords
             if (settings.EnableAILordsTownsRevenue || settings.EnableAILordsCastlesRevenue || settings.EnableAILordsVillagesRevenue)
                 ProcessDenarsRevenueForAILords();
 
-            if (settings.EnableAILordsTradeExperience)
-                HandleTradeExperienceForAI();
+            //if (settings.EnableAILordsTradeExperience)
+            //    HandleTradeExperienceForAI();
 
             if (settings.EnableAILordsBuildingBoost)
             {
@@ -613,6 +613,7 @@ namespace ImprovedEconomyForAILords
             return 1f;
         }
 
+        /*
         private void HandleTradeExperienceForAI()
         {
             int baseXpPerCaravan = settings.TradeExperiencePerCaravanDaily;
@@ -640,7 +641,8 @@ namespace ImprovedEconomyForAILords
 
             LogPlayerKingdomTradeXP();
         }
-
+        */
+        /*
         private void HandleCaravansForAI()
         {
             foreach (Hero hero in Hero.AllAliveHeroes)
@@ -659,11 +661,14 @@ namespace ImprovedEconomyForAILords
                     TryCreateCaravanForHero(hero);
             }
         }
+        */
 
+        /*
         private static bool CanHeroHaveACaravan(Hero hero)
         {
             return hero.IsClanLeader && hero.Clan != null && hero.Clan.Kingdom != null && !hero.Clan.IsClanTypeMercenary && !hero.Clan.IsBanditFaction && !hero.IsPrisoner;
         }
+        */
 
         private static void RemoveExcessCaravansForHero(Hero hero, int ownedCaravansCount, int maxCaravansPossible)
         {
@@ -688,7 +693,9 @@ namespace ImprovedEconomyForAILords
                 }
             }
         }
+        
 
+        /*
         private static int HowManyCaravansAIHeroCanHave(Hero hero, int currentCaravansCount)
         {
             float heroClanInfluence = hero.Clan.Influence;
@@ -700,7 +707,9 @@ namespace ImprovedEconomyForAILords
             else
                 return 2;
         }
+        */
 
+        /*
         private void TryCreateCaravanForHero(Hero hero)
         {
             if (hero == null)
@@ -725,7 +734,9 @@ namespace ImprovedEconomyForAILords
             caravanParty.PartyTradeGold = caravansDenarsAmount;
             caravanParty.InitializePartyTrade(caravansDenarsAmount);
         }
+        */
 
+        /*
         private Settlement? SelectBestSettlementForCaravan(Hero hero)
         {
             // Priority 1: Hero's birth or home settlement with matching culture
@@ -754,6 +765,7 @@ namespace ImprovedEconomyForAILords
                 .OrderBy(_ => MBRandom.RandomFloat)
                 .FirstOrDefault();
         }
+        */
 
         private void HandleArenaLeadersForAI()
         {
@@ -1133,6 +1145,7 @@ namespace ImprovedEconomyForAILords
             }
         }
 
+        /*
         private void LogPlayerKingdomTradeXP()
         {
             if (!settings.EnablePlayerRelevantLogging || Hero.MainHero?.Clan?.Kingdom == null)
@@ -1154,6 +1167,7 @@ namespace ImprovedEconomyForAILords
                 }
             }
         }
+        */
 
         private void LogPlayerRelevantInfo(string message)
         {

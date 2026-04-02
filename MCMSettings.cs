@@ -103,7 +103,7 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyInteger("{=IEFAIL_DYTASs}Caravans Denars Amount", 1000, 100000, Order = 1, RequireRestart = false, HintText = "{=IEFAIL_1Ek9CH}Amount of denars caravans will have when created. [Default: 8520]")]
         [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
         public int CaravansDenarsAmount { get; set; } = 8520;
-        */
+        
         [SettingPropertyBool("{=IEFAIL_Kiyniz}Enable AI Lords' Trade Experience", Order = 2, RequireRestart = false, HintText = "{=IEFAIL_ZcELyJ}Enable trade skill experience for AI lords with caravans. [Default: true]")]
         [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
         public bool EnableAILordsTradeExperience { get; set; } = true;
@@ -115,7 +115,7 @@ namespace ImprovedEconomyForAILords
         [SettingPropertyBool("{=IEFAIL_1Kn8ZV}Consider Focus Points For Trade XP", Order = 4, RequireRestart = false, HintText = "{=IEFAIL_lUfWn9}When enabled, trade experience from caravans will be affected by focus points and attributes. [Default: false]")]
         [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
         public bool ConsiderFocusFactorsForTradeXp { get; set; } = false;
-
+        */
 
         // Arena revenue settings
         [SettingPropertyBool("{=IEFAIL_h8Whk3}Enable AI Lords' Arena Revenue", Order = 0, RequireRestart = false, HintText = "{=IEFAIL_yWOIIP}Enable arena tournament leaderboard revenue for AI Lords. Every week 12 (by default) most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]")]
