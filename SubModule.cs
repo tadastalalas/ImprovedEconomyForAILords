@@ -58,7 +58,6 @@ namespace ImprovedEconomyForAILords
 
             if (eventField?.GetValue(null) is MulticastDelegate eventDelegate && eventDelegate.GetInvocationList().Length > 0)
             {
-                // Use reflection to call ClearListeners dynamically
                 var eventProperty = typeof(CampaignEvents).GetProperty(eventName);
                 var clearMethod = eventProperty?.PropertyType.GetMethod("ClearListeners");
                 clearMethod?.Invoke(eventProperty?.GetValue(null), new object[] { this });
@@ -120,7 +119,6 @@ namespace ImprovedEconomyForAILords
         {
             CampaignEvents.DailyTickEvent.AddNonSerializedListener(this, new Action(OnDailyTickEvent));
             CampaignEvents.WeeklyTickEvent.AddNonSerializedListener(this, new Action(OnWeeklyTickEvent));
-            //CampaignEvents.MobilePartyDestroyed.AddNonSerializedListener(this, new Action<MobileParty, PartyBase>(OnMobilePartyDestroyed));
             CampaignEvents.OnNewGameCreatedEvent.AddNonSerializedListener(this, new Action<CampaignGameStarter>(this.OnNewGameCreatedEvent));
             CampaignEvents.OnClanDestroyedEvent.AddNonSerializedListener(this, new Action<Clan>(OnClanDestroyedEvent));
         }
@@ -145,9 +143,6 @@ namespace ImprovedEconomyForAILords
             if (settings.EnableAILordsTownsRevenue || settings.EnableAILordsCastlesRevenue || settings.EnableAILordsVillagesRevenue)
                 ProcessDenarsRevenueForAILords();
 
-            //if (settings.EnableAILordsTradeExperience)
-            //    HandleTradeExperienceForAI();
-
             if (settings.EnableAILordsBuildingBoost)
             {
                 HandleAIBuildingBoosts();
@@ -160,29 +155,12 @@ namespace ImprovedEconomyForAILords
             if (!settings.EnableThisModification)
                 return;
 
-            //HandleCaravansForAI();
             HandleArenaLeadersForAI();
         }
 
         
         private void OnMobilePartyDestroyed(MobileParty mobileParty, PartyBase destroyerParty)
         {
-            /*
-            if (!settings.EnableAILordsCaravans)
-                return;
-            if (mobileParty?.PartyComponent?.Leader == null)
-                return;
-
-            Hero destroyedPartyLeader = mobileParty.PartyComponent.Leader;
-
-            if (!destroyedPartyLeader.IsClanLeader)
-                return;
-
-            int ownedCaravansCount = destroyedPartyLeader.OwnedCaravans.Count;
-
-            if (ownedCaravansCount > 0)
-                RemoveExcessCaravansForHero(destroyedPartyLeader, ownedCaravansCount, 0);
-            */
         }
 
 
@@ -193,24 +171,6 @@ namespace ImprovedEconomyForAILords
 
         private void OnClanDestroyedEvent(Clan destroyedClan)
         {
-            /*
-            if (!settings.EnableAILordsCaravans)
-                return;
-
-            if (destroyedClan == null || destroyedClan.Leader == null)
-                return;
-
-            Hero clanLeader = destroyedClan.Leader;
-            int ownedCaravansCount = clanLeader.OwnedCaravans.Count;
-
-            if (ownedCaravansCount <= 0)
-                return;
-
-            if (settings.LoggingEnabled)
-                LogMessage($"Clan {destroyedClan.Name} was eliminated. Removing {ownedCaravansCount} caravan(s) from {clanLeader.Name}", Colors.Red);
-
-            RemoveExcessCaravansForHero(clanLeader, ownedCaravansCount, 0);
-            */
         }
 
         private void RemoveAllModSpawnedCaravans()
@@ -220,9 +180,10 @@ namespace ImprovedEconomyForAILords
                 if (hero == Hero.MainHero || !hero.IsClanLeader || hero.Clan == null)
                     continue;
 
-                int ownedCaravansCount = hero.OwnedCaravans.Count;
-                if (ownedCaravansCount <= 0)
+                if (hero.OwnedCaravans == null || hero.OwnedCaravans.Count <= 0)
                     continue;
+
+                int ownedCaravansCount = hero.OwnedCaravans.Count;
 
                 RemoveExcessCaravansForHero(hero, ownedCaravansCount, 0);
             }
@@ -507,7 +468,6 @@ namespace ImprovedEconomyForAILords
         {
             int payment = basePayment;
 
-            // Apply player revenue multiplier if this hero is in the player's clan
             if (hero.Clan == Hero.MainHero.Clan)
             {
                 payment = (int)(payment * settings.PlayerRevenueMultiplier);
@@ -613,63 +573,6 @@ namespace ImprovedEconomyForAILords
             return 1f;
         }
 
-        /*
-        private void HandleTradeExperienceForAI()
-        {
-            int baseXpPerCaravan = settings.TradeExperiencePerCaravanDaily;
-            bool considerFocusFactors = settings.ConsiderFocusFactorsForTradeXp;
-
-            foreach (Hero hero in Hero.AllAliveHeroes)
-            {
-                if (hero == Hero.MainHero || !hero.IsClanLeader || hero.Clan == null || hero.IsPrisoner || hero.IsWanderer)
-                    continue;
-
-                int ownedCaravansCount = hero.OwnedCaravans.Count;
-
-                if (ownedCaravansCount <= 0)
-                    continue;
-
-                int totalXp = baseXpPerCaravan * ownedCaravansCount;
-
-                hero.HeroDeveloper.AddSkillXp(DefaultSkills.Trade, totalXp, considerFocusFactors, true);
-
-                if (settings.LoggingEnabled)
-                {
-                    LogMessage($"{hero.Name} gained {totalXp} trade experience from {ownedCaravansCount} caravan(s)");
-                }
-            }
-
-            LogPlayerKingdomTradeXP();
-        }
-        */
-        /*
-        private void HandleCaravansForAI()
-        {
-            foreach (Hero hero in Hero.AllAliveHeroes)
-            {
-                if (hero == Hero.MainHero || hero.IsWanderer)
-                    continue;
-                if (!CanHeroHaveACaravan(hero))
-                    continue;
-
-                int ownedCaravansCount = hero.OwnedCaravans.Count;
-                int maxCaravansPossible = settings.EnableAILordsCaravans ? HowManyCaravansAIHeroCanHave(hero, ownedCaravansCount) : 0;
-
-                if (ownedCaravansCount > maxCaravansPossible)
-                    RemoveExcessCaravansForHero(hero, ownedCaravansCount, maxCaravansPossible);
-                else if (settings.EnableAILordsCaravans && ownedCaravansCount < maxCaravansPossible)
-                    TryCreateCaravanForHero(hero);
-            }
-        }
-        */
-
-        /*
-        private static bool CanHeroHaveACaravan(Hero hero)
-        {
-            return hero.IsClanLeader && hero.Clan != null && hero.Clan.Kingdom != null && !hero.Clan.IsClanTypeMercenary && !hero.Clan.IsBanditFaction && !hero.IsPrisoner;
-        }
-        */
-
         private static void RemoveExcessCaravansForHero(Hero hero, int ownedCaravansCount, int maxCaravansPossible)
         {
             int caravansToRemoveCount = ownedCaravansCount - maxCaravansPossible;
@@ -693,79 +596,6 @@ namespace ImprovedEconomyForAILords
                 }
             }
         }
-        
-
-        /*
-        private static int HowManyCaravansAIHeroCanHave(Hero hero, int currentCaravansCount)
-        {
-            float heroClanInfluence = hero.Clan.Influence;
-
-            if (heroClanInfluence <= 350f)
-                return 0;
-            else if (heroClanInfluence <= 1050f)
-                return 1;
-            else
-                return 2;
-        }
-        */
-
-        /*
-        private void TryCreateCaravanForHero(Hero hero)
-        {
-            if (hero == null)
-            {
-                DebugLogMessage("Hero was passed as null value to TryCreateCaravanForHero(Hero hero) method. Caravan was not created.");
-                return;
-            }
-            
-            Settlement? selectedSettlement = SelectBestSettlementForCaravan(hero);
-
-            if (selectedSettlement == null)
-            {
-                DebugLogMessage("Unable to select a proper settlement to create an AI hero caravan.");
-                return;
-            }
-
-            // int caravansTroopsAmount = settings.CaravansTroopsAmount;
-            int caravansDenarsAmount = settings.CaravansDenarsAmount;
-
-            PartyTemplateObject randomCaravanTemplate = CaravanHelper.GetRandomCaravanTemplate(hero.Culture, true, true);
-            MobileParty caravanParty = CaravanPartyComponent.CreateCaravanParty(hero, selectedSettlement, randomCaravanTemplate, false, null, null, true);
-            caravanParty.PartyTradeGold = caravansDenarsAmount;
-            caravanParty.InitializePartyTrade(caravansDenarsAmount);
-        }
-        */
-
-        /*
-        private Settlement? SelectBestSettlementForCaravan(Hero hero)
-        {
-            // Priority 1: Hero's birth or home settlement with matching culture
-            Settlement? selectedSettlement = hero.BornSettlement ?? hero.HomeSettlement;
-            if (selectedSettlement != null && selectedSettlement.Culture == hero.Culture)
-                return selectedSettlement;
-
-            // Priority 2: Random town with matching culture
-            selectedSettlement = Settlement.All
-                .Where(s => s.IsTown && s.Culture == hero.Culture)
-                .OrderBy(_ => MBRandom.RandomFloat)
-                .FirstOrDefault();
-            if (selectedSettlement != null)
-                return selectedSettlement;
-
-            // Priority 3: Any random town
-            selectedSettlement = Settlement.All
-                .Where(s => s.IsTown)
-                .OrderBy(_ => MBRandom.RandomFloat)
-                .FirstOrDefault();
-            if (selectedSettlement != null)
-                return selectedSettlement;
-
-            // Priority 4: Any random settlement
-            return Settlement.All
-                .OrderBy(_ => MBRandom.RandomFloat)
-                .FirstOrDefault();
-        }
-        */
 
         private void HandleArenaLeadersForAI()
         {
@@ -810,7 +640,6 @@ namespace ImprovedEconomyForAILords
 
                 if (reward > 0)
                 {
-                    // Apply player revenue multiplier if this hero is in the player's clan
                     if (hero.Clan == Hero.MainHero.Clan)
                     {
                         reward = (int)(reward * settings.PlayerRevenueMultiplier);
@@ -1145,30 +974,6 @@ namespace ImprovedEconomyForAILords
             }
         }
 
-        /*
-        private void LogPlayerKingdomTradeXP()
-        {
-            if (!settings.EnablePlayerRelevantLogging || Hero.MainHero?.Clan?.Kingdom == null)
-                return;
-
-            var kingdomName = Hero.MainHero.Clan.Kingdom.Name.ToString();
-            var tradesmenLords = Hero.AllAliveHeroes
-                .Where(h => h != Hero.MainHero && IsHeroInPlayerKingdom(h) && h.IsClanLeader && h.OwnedCaravans.Count > 0)
-                .ToList();
-
-            if (tradesmenLords.Any())
-            {
-                LogPlayerRelevantInfo($"--- {kingdomName} Trading Lords ---", Colors.White);
-                foreach (var lord in tradesmenLords)
-                {
-                    int caravanCount = lord.OwnedCaravans.Count;
-                    int tradeSkill = lord.GetSkillValue(DefaultSkills.Trade);
-                    LogPlayerRelevantInfo($"{lord.Name.ToString()} - Trade skill: {tradeSkill}, Caravans: {caravanCount}");
-                }
-            }
-        }
-        */
-
         private void LogPlayerRelevantInfo(string message)
         {
             LogPlayerRelevantInfo(message, Colors.Yellow);
@@ -1204,10 +1009,11 @@ namespace ImprovedEconomyForAILords
         {
             try
             {
+                dataStore.SyncData("AILordsCaravanCleanupDone", ref _caravanCleanupDone);
+
                 if (dataStore.IsLoading)
                 {
                     string savedDataString = "";
-                    dataStore.SyncData("AILordsCaravanCleanupDone", ref _caravanCleanupDone);
                     dataStore.SyncData("AILordsInvestmentString", ref savedDataString);
 
                     _lordInvestmentTracker.Clear();
