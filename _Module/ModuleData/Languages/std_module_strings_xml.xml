@@ -64,10 +64,8 @@
 		<string id="IEFAIL_6wOF90" text="Base amount of trade experience per caravan that AI lords receive daily. [Default: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="Consider Focus Points For Trade XP" /> <!--  -->
 		<string id="IEFAIL_lUfWn9" text="When enabled, trade experience from caravans will be affected by focus points and attributes. [Default: false]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="Enable AI Lords' Arena Revenue" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="Enable arena tournament leaderboard revenue for AI Lords. Every week 12 (by default) most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="Enable Player Arena Revenue" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="Enable arena tournament leaderboard revenue for Player. [Default: true]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Enable Arena Revenue" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Enable arena tournament leaderboard revenue for everyone, Player and AI Lords alike, without discrimination. Every week 12 (by default) most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="Arena Base Reward" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="Base reward for arena top leaderboard members. First place gets 2x this amount, 10th place gets 0.5x. [Default: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="Arena Leaderboard Count" /> <!--  -->

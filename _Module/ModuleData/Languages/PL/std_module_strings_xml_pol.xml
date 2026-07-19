@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="XP Handlu na Karawanę Dziennie" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="Podstawowa ilość doświadczenia handlu na karawanę, którą Lordowie AI otrzymują dziennie. [Domyślnie: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="Uwzględnij Punkty Fokusu dla XP Handlu" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="Gdy włączone, doświadczenie handlu z karawan będzie wpływane przez punkty fokusu i atrybuty. [Domyślnie: false]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="Włącz Dochód z Areny Lordów AI" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="Włącz dochód z rankingu turnieju areny dla Lordów AI. Co tydzień 12 (domyślnie) najbardziej wyróżniających się bohaterów otrzyma nagrody pieniężne na podstawie ich rankingów i dostosowanej liczby poniżej. [Domyślnie: true]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="Włącz Dochód z Areny Gracza" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="Włącz dochód z rankingu turnieju areny dla Gracza. [Domyślnie: true]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Włącz Dochód z Areny" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Włącz dochód z rankingu turnieju areny dla wszystkich, Gracza i Lordów AI bez rozróżnienia. Co tydzień 12 (domyślnie) najbardziej wyróżniających się bohaterów otrzyma nagrody pieniężne na podstawie ich rankingów i dostosowanej liczby poniżej. [Domyślnie: true]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="Podstawowa Nagroda Areny" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="Podstawowa nagroda dla członków top rankingu areny. Pierwsze miejsce otrzymuje 2x tej kwoty, 10. miejsce 0.5x. [Domyślnie: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="Liczba Rankingu Areny" /> <!--  -->

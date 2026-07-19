@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="單商隊每日貿易經驗" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="AI領主每日每個商隊獲得的基礎貿易經驗值。 [預設: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="貿易經驗考量專精點" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="啟用後商隊貿易經驗受專精點與屬性影響。 [預設: false]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="啟用AI領主競技場收入" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="啟用AI領主競技場錦標賽排行榜收入。每週（預設12名）依排名及下方調整值發放獎勵。 [預設: true]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="啟用玩家競技場收入" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="啟用玩家競技場錦標賽排行榜收入。 [預設: true]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="啟用競技場收入" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="為所有人（玩家與AI領主）平等啟用競技場錦標賽排行榜收入，不作區別。每週（預設12名）依排名及下方調整值發放獎勵。 [預設: true]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="競技場基礎獎勵" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="排行榜頂端成員基礎獎勵。第一名獲得2倍，第10名獲得0.5倍。 [預設: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="競技場排行榜人數" /> <!--  -->

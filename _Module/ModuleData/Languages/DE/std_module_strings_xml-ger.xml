@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="Handels-XP pro Karawane täglich" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="Grundbetrag der Handelserfahrung pro Karawane, den KI-Lords täglich erhalten. [Standard: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="Fokus-Punkte für Handels-XP berücksichtigen" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="Wenn aktiviert, wird die Handelserfahrung aus Karawanen von Fokus-Punkten und Attributen beeinflusst. [Standard: falsch]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="Arena-Einnahmen für KI-Lords aktivieren" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="Arena-Turnier-Leaderboard-Einnahmen für KI-Lords aktivieren. Jede Woche erhalten die 12 (standardmäßig) herausragendsten Helden monetäre Belohnungen basierend auf ihren Rankings und der unten angepassten Zahl. [Standard: wahr]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="Arena-Einnahmen für Spieler aktivieren" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="Arena-Turnier-Leaderboard-Einnahmen für Spieler aktivieren. [Standard: wahr]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Arena-Einnahmen aktivieren" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Arena-Turnier-Leaderboard-Einnahmen für alle aktivieren, Spieler und KI-Lords gleichermaßen, ohne Unterscheidung. Jede Woche erhalten die 12 (standardmäßig) herausragendsten Helden monetäre Belohnungen basierend auf ihren Rankings und der unten angepassten Zahl. [Standard: wahr]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="Arena-Grundbelohnung" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="Grundbelohnung für die Top-Leaderboard-Mitglieder der Arena. Der Erste erhält das 2-fache, der Zehnte das 0.5-fache. [Standard: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="Anzahl der Arena-Leaderboard" /> <!--  -->

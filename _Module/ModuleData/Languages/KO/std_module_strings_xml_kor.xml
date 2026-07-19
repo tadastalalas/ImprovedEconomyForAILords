@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="캐러밴당 무역 XP 일일" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="AI 영주가 캐러밴당 일일로 받는 무역 경험의 기본 양. [기본값: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="무역 XP에 포커스 포인트 고려" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="활성화되면 캐러밴의 무역 경험이 포커스 포인트와 속성에 의해 영향을 받습니다. [기본값: false]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="AI 영주의 아레나 수입 활성화" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="AI 영주의 아레나 토너먼트 리더보드 수입을 활성화합니다. 매주 12명(기본값)의 가장 뛰어난 영웅이 랭킹과 아래 조정 수에 기반하여 금전 보상을 받습니다. [기본값: true]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="플레이어 아레나 수입 활성화" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="플레이어의 아레나 토너먼트 리더보드 수입을 활성화합니다. [기본값: true]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="아레나 수입 활성화" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="플레이어와 AI 영주 모두에게 차별 없이 아레나 토너먼트 리더보드 수입을 활성화합니다. 매주 12명(기본값)의 가장 뛰어난 영웅이 랭킹과 아래 조정 수에 기반하여 금전 보상을 받습니다. [기본값: true]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="아레나 기본 보상" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="아레나 탑 리더보드 멤버의 기본 보상. 1위는 2배, 10위는 0.5배. [기본값: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="아레나 리더보드 수" /> <!--  -->

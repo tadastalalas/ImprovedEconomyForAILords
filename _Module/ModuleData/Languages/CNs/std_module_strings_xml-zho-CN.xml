@@ -64,10 +64,8 @@
 		<string id="IEFAIL_6wOF90" text="AI领主每日每个商队获得的基础贸易经验值。[默认: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="贸易经验考虑专精点" /> <!--  -->
 		<string id="IEFAIL_lUfWn9" text="启用后商队贸易经验受专精点与属性影响。[默认: false]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="启用AI领主竞技场收入" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="启用AI领主竞技场锦标赛排行榜收入。每周（默认12名）按排名与下方调整值发放奖励。[默认: true]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="启用玩家竞技场收入" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="启用玩家竞技场锦标赛排行榜收入。[默认: true]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="启用竞技场收入" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="为所有人（玩家与AI领主）平等启用竞技场锦标赛排行榜收入，不加区分。每周（默认12名）按排名与下方调整值发放奖励。[默认: true]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="竞技场基础奖励" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="排行榜成员基础奖励。第1名得2倍，第10名得0.5倍。[默认: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="竞技场排行榜人数" /> <!--  -->

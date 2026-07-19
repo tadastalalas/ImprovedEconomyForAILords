@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="XP Commercio Per Carovana Giornaliero" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="Quantità base di esperienza commercio per carovana che i signori IA ricevono giornalmente. [Predefinito: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="Considera Punti Focus Per XP Commercio" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="Quando abilitato, l'esperienza commercio dalle carovane sarà influenzata da punti focus e attributi. [Predefinito: falso]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="Abilita Entrate Arena Signori IA" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="Abilita entrate classifica torneo arena per Signori IA. Ogni settimana i 12 eroi più distinti (per default) riceveranno ricompense monetarie basate sui loro ranking e il numero regolato sotto. [Predefinito: vero]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="Abilita Entrate Arena Giocatore" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="Abilita entrate classifica torneo arena per Giocatore. [Predefinito: vero]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Abilita Entrate Arena" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Abilita le entrate della classifica del torneo d'arena per tutti, Giocatore e Signori IA allo stesso modo, senza discriminazioni. Ogni settimana i 12 eroi più distinti (per default) riceveranno ricompense monetarie basate sui loro ranking e il numero regolato sotto. [Predefinito: vero]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="Ricompensa Base Arena" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="Ricompensa base per membri top classifica arena. Primo posto ottiene 2x questo importo, decimo posto ottiene 0.5x. [Predefinito: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="Conteggio Classifica Arena" /> <!--  -->

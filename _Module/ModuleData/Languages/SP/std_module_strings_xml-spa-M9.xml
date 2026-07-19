@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="XP de Comercio por Caravana Diaria" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="Cantidad base de experiencia de comercio por caravana que los señores IA reciben diariamente. [Predeterminado: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="Considerar Puntos de Enfoque para XP de Comercio" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="Cuando está habilitado, la experiencia de comercio de caravanas será afectada por puntos de enfoque y atributos. [Predeterminado: false]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="Habilitar Ingresos de Arena de Señores IA" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="Habilitar ingresos de tabla de clasificación de torneo de arena para Señores IA. Cada semana 12 (por defecto) héroes más distinguidos recibirán recompensas monetarias basadas en sus rankings y el número ajustado abajo. [Predeterminado: true]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="Habilitar Ingresos de Arena del Jugador" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="Habilitar ingresos de tabla de clasificación de torneo de arena para Jugador. [Predeterminado: true]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Habilitar Ingresos de Arena" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Habilitar ingresos de la tabla de clasificación del torneo de arena para todos, Jugador y Señores IA por igual, sin discriminación. Cada semana 12 (por defecto) héroes más distinguidos recibirán recompensas monetarias basadas en sus rankings y el número ajustado abajo. [Predeterminado: true]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="Recompensa Base de Arena" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="Recompensa base para miembros del top de tabla de arena. El primer lugar obtiene 2x esta cantidad, el décimo lugar obtiene 0.5x. [Predeterminado: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="Cantidad de Tabla de Arena" /> <!--  -->

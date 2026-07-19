@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="XP de commerce par caravane quotidien" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="Montant de base de l'expérience de commerce par caravane que les seigneurs IA reçoivent quotidiennement. [Par défaut : 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="Considérer les points de focus pour l'XP de commerce" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="Lorsqu'activé, l'expérience de commerce des caravanes sera affectée par les points de focus et les attributs. [Par défaut : faux]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="Activer les revenus d'arène des seigneurs IA" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="Activer les revenus du classement des tournois d'arène pour les seigneurs IA. Chaque semaine, les 12 héros les plus distingués (par défaut) recevront des récompenses monétaires basées sur leurs classements et le nombre ajusté ci-dessous. [Par défaut : vrai]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="Activer les revenus d'arène du joueur" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="Activer les revenus du classement des tournois d'arène pour le joueur. [Par défaut : vrai]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Activer les revenus d'arène" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Activer les revenus du classement des tournois d'arène pour tout le monde, Joueur et seigneurs IA sans distinction. Chaque semaine, les 12 héros les plus distingués (par défaut) recevront des récompenses monétaires basées sur leurs classements et le nombre ajusté ci-dessous. [Par défaut : vrai]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="Récompense de base d'arène" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="Récompense de base pour les membres du top du classement d'arène. La première place obtient 2x ce montant, la dixième 0.5x. [Par défaut : 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="Nombre de classements d'arène" /> <!--  -->

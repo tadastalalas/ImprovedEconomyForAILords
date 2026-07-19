@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="キャラバンごとの交易XP日次" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="AI領主が日次でキャラバンごとに受け取る交易経験の基本量。[デフォルト: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="交易XPにフォーカスポイントを考慮する" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="有効にすると、キャラバンからの交易経験がフォーカスポイントと属性によって影響を受ける。[デフォルト: false]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="AI領主のアリーナ収入を有効にする" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="AI領主のアリーナトーナメントリーダーボード収入を有効にする。毎週12人（デフォルト）の最も優れた英雄がランキングと下記の調整数に基づいて金銭報酬を得る。[デフォルト: true]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="プレイヤーアリーナ収入を有効にする" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="プレイヤーのアリーナトーナメントリーダーボード収入を有効にする。[デフォルト: true]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="アリーナ収入を有効にする" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="プレイヤーとAI領主を区別せず、全員を対象にアリーナトーナメントリーダーボード収入を有効にする。毎週12人（デフォルト）の最も優れた英雄がランキングと下記の調整数に基づいて金銭報酬を得る。[デフォルト: true]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="アリーナ基本報酬" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="アリーナトップリーダーボードメンバーの基本報酬。1位は2倍、この額の10位は0.5倍。[デフォルト: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="アリーナリーダーボード数" /> <!--  -->

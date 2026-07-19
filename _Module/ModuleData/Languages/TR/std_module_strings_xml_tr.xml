@@ -64,11 +64,8 @@
 		<string id="IEFAIL_NKMFnq" text="Kervan Başına Günlük Ticaret XP" /> <!--  -->
 		<string id="IEFAIL_6wOF90" text="YZ lordlarının günlük olarak kervan başına aldığı temel ticaret deneyimi miktarı. [Varsayılan: 15]" /> <!--  -->
 		<string id="IEFAIL_1Kn8ZV" text="Ticaret XP İçin Odak Puanlarını Dikkate Al" /> <!--  -->
-		<string id="IEFAIL_lUfWn9" text="Etkinleştirildiğinde, kervanlardan kazanılan ticaret deneyimi odak puanları ve özelliklerden etkilenir. [Varsayılan: kapalı]" /> <!--  -->
-		<string id="IEFAIL_h8Whk3" text="YZ Lordlarının Arena Gelirini Etkinleştir" /> <!--  -->
-		<string id="IEFAIL_yWOIIP" text="YZ lordları için arena turnuvası sıralaması gelirini etkinleştir. Her hafta varsayılan olarak en seçkin 12 kahraman, sıralamalarına ve aşağıdaki ayarlanan değere göre parasal ödül alır. [Varsayılan: açık]" /> <!--  -->
-		<string id="IEFAIL_n5p2Xp" text="Oyuncu Arena Gelirini Etkinleştir" /> <!--  -->
-		<string id="IEFAIL_v6mbdQ" text="Oyuncu için arena turnuvası sıralaması gelirini etkinleştir. [Varsayılan: açık]" /> <!--  -->
+		<string id="IEFAIL_h8Whk3" text="Arena Gelirini Etkinleştir" /> <!--  -->
+		<string id="IEFAIL_yWOIIP" text="Oyuncu ve YZ Lordları ayrımı yapılmaksızın herkes için arena turnuvası sıralaması gelirini etkinleştir. Her hafta varsayılan olarak en seçkin 12 kahraman, sıralamalarına ve aşağıdaki ayarlanan değere göre parasal ödül alır. [Varsayılan: açık]" /> <!--  -->
 		<string id="IEFAIL_LWsF6y" text="Arena Temel Ödülü" /> <!--  -->
 		<string id="IEFAIL_v7Fo3j" text="Arena üst sıralama üyeleri için temel ödül. Birinci 2 katını, onuncu 0.5 katını alır. [Varsayılan: 12460]" /> <!--  -->
 		<string id="IEFAIL_AMlJaO" text="Arena Sıralaması Sayısı" /> <!--  -->

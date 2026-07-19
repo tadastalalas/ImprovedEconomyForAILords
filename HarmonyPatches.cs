@@ -15,7 +15,7 @@ namespace ImprovedEconomyForAILords
 
         static void Postfix(Village __instance)
         {
-            if (!settings.EnableTownsDenarsIncrease)
+            if (!settings.EnableThisModification || !settings.EnableTownsDenarsIncrease)
                 return;
 
             if (__instance != null && __instance.Settlement != null)
@@ -41,7 +41,7 @@ namespace ImprovedEconomyForAILords
                     $"GetBoostAmount called for {town?.Name} - Result: {__result}", Colors.Yellow));
             }
 
-            if (!settings.EnableAILordsBuildingBoost)
+            if (!settings.EnableThisModification || !settings.EnableAILordsBuildingBoost)
                 return;
 
             if (town?.OwnerClan?.Leader == null || town.OwnerClan.Leader == Hero.MainHero)

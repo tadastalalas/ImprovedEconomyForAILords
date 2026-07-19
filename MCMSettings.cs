@@ -90,41 +90,10 @@ namespace ImprovedEconomyForAILords
         public float FieflessClanLeaderRevenueMultiplier { get; set; } = 1.50f;
 
 
-        // AI Lords' caravans settings
-        /*
-        [SettingPropertyBool("{=IEFAIL_rgVmYA}Enable AI Lords' Caravans", Order = 0, RequireRestart = false, HintText = "{=IEFAIL_8ol5a2}Enable spawning/handling caravans of AI Lords. [Default: false]")]
-        [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
-        public bool EnableAILordsCaravans { get; set; } = false;
-        
-        [SettingPropertyInteger("{=IEFAIL_USwg4A}Caravans Troops Amount", 10, 100, Order = 1, RequireRestart = false, HintText = "{=IEFAIL_kZKaW2}Amount of troops caravans will have when created. [Default: 30]")]
-        [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
-        public int CaravansTroopsAmount { get; set; } = 30;
-        
-        [SettingPropertyInteger("{=IEFAIL_DYTASs}Caravans Denars Amount", 1000, 100000, Order = 1, RequireRestart = false, HintText = "{=IEFAIL_1Ek9CH}Amount of denars caravans will have when created. [Default: 8520]")]
-        [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
-        public int CaravansDenarsAmount { get; set; } = 8520;
-        
-        [SettingPropertyBool("{=IEFAIL_Kiyniz}Enable AI Lords' Trade Experience", Order = 2, RequireRestart = false, HintText = "{=IEFAIL_ZcELyJ}Enable trade skill experience for AI lords with caravans. [Default: true]")]
-        [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
-        public bool EnableAILordsTradeExperience { get; set; } = true;
-
-        [SettingPropertyInteger("{=IEFAIL_NKMFnq}Trade XP Per Caravan Daily", 1, 100, Order = 3, RequireRestart = false, HintText = "{=IEFAIL_6wOF90}Base amount of trade experience per caravan that AI lords receive daily. [Default: 15]")]
-        [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
-        public int TradeExperiencePerCaravanDaily { get; set; } = 15;
-
-        [SettingPropertyBool("{=IEFAIL_1Kn8ZV}Consider Focus Points For Trade XP", Order = 4, RequireRestart = false, HintText = "{=IEFAIL_lUfWn9}When enabled, trade experience from caravans will be affected by focus points and attributes. [Default: false]")]
-        [SettingPropertyGroup("{=IEFAIL_fyyCjf}Caravans Settings", GroupOrder = 3)]
-        public bool ConsiderFocusFactorsForTradeXp { get; set; } = false;
-        */
-
         // Arena revenue settings
-        [SettingPropertyBool("{=IEFAIL_h8Whk3}Enable AI Lords' Arena Revenue", Order = 0, RequireRestart = false, HintText = "{=IEFAIL_yWOIIP}Enable arena tournament leaderboard revenue for AI Lords. Every week 12 (by default) most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]")]
+        [SettingPropertyBool("{=IEFAIL_h8Whk3}Enable Arena Revenue", Order = 0, RequireRestart = false, HintText = "{=IEFAIL_yWOIIP}Enable arena tournament leaderboard revenue for everyone, Player and AI Lords alike, without discrimination. Every week 12 (by default) most distinguished heroes will get monetary rewards based on their rankings and adjusted number below. [Default: true]")]
         [SettingPropertyGroup("{=IEFAIL_IijmV5}Arena Revenue Settings", GroupOrder = 4)]
-        public bool EnableAILordsArenaRevenue { get; set; } = true;
-
-        [SettingPropertyBool("{=IEFAIL_n5p2Xp}Enable Player Arena Revenue", Order = 1, RequireRestart = false, HintText = "{=IEFAIL_v6mbdQ}Enable arena tournament leaderboard revenue for Player. [Default: true]")]
-        [SettingPropertyGroup("{=IEFAIL_IijmV5}Arena Revenue Settings", GroupOrder = 4)]
-        public bool EnablePlayerArenaRevenue { get; set; } = true;
+        public bool EnableArenaRevenue { get; set; } = true;
 
         [SettingPropertyInteger("{=IEFAIL_LWsF6y}Arena Base Reward", 100, 100000, Order = 2, RequireRestart = false, HintText = "{=IEFAIL_v7Fo3j}Base reward for arena top leaderboard members. First place gets 2x this amount, 10th place gets 0.5x. [Default: 12460]")]
         [SettingPropertyGroup("{=IEFAIL_IijmV5}Arena Revenue Settings", GroupOrder = 4)]

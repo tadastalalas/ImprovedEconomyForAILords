@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using Bannerlord.UIExtenderEx;
 using HarmonyLib;
 using Helpers;
 using MCM.Abstractions.Base.Global;
 using TaleWorlds.CampaignSystem;
-using TaleWorlds.CampaignSystem.Actions;
 using TaleWorlds.CampaignSystem.Party;
-using TaleWorlds.CampaignSystem.Party.PartyComponents;
 using TaleWorlds.CampaignSystem.Settlements;
 using TaleWorlds.Core;
 using TaleWorlds.Library;
@@ -46,26 +43,15 @@ namespace ImprovedEconomyForAILords
 
         public override void OnGameEnd(Game game)
         {
-            ClearEventListenersIfNeeded("DailyTickEvent");
-            ClearEventListenersIfNeeded("WeeklyTickEvent");
+            ImprovedEconomyForAILordsBehavior behavior = Campaign.Current?.GetCampaignBehavior<ImprovedEconomyForAILordsBehavior>();
+            if (behavior != null)
+            {
+                CampaignEvents.DailyTickEvent.ClearListeners(behavior);
+                CampaignEvents.WeeklyTickEvent.ClearListeners(behavior);
+            }
 
             base.OnGameEnd(game);
         }
-
-        private void ClearEventListenersIfNeeded(string eventName)
-        {
-            var eventField = typeof(CampaignEvents).GetField($"{eventName}", BindingFlags.Static | BindingFlags.NonPublic);
-
-            if (eventField?.GetValue(null) is MulticastDelegate eventDelegate && eventDelegate.GetInvocationList().Length > 0)
-            {
-                var eventProperty = typeof(CampaignEvents).GetProperty(eventName);
-                var clearMethod = eventProperty?.PropertyType.GetMethod("ClearListeners");
-                clearMethod?.Invoke(eventProperty?.GetValue(null), new object[] { this });
-            }
-        }
-
-        protected override void OnSubModuleUnloaded() => base.OnSubModuleUnloaded();
-        protected override void OnBeforeInitialModuleScreenSetAsRoot() => base.OnBeforeInitialModuleScreenSetAsRoot();
     }
 
     public class ImprovedEconomyForAILordsBehavior : CampaignBehaviorBase
@@ -103,14 +89,12 @@ namespace ImprovedEconomyForAILords
         private int fieflessRel30to59Clans = 0;
         private int fieflessRel60to99Clans = 0;
         private int fieflessRel100PlusClans = 0;
-        private readonly HashSet<Clan> _countedFieflessClans = new();
 
         private readonly Dictionary<Hero, (int TownSum, int CastleSum, int VillageSum, int TownPays, int CastlePays, int VillagePays)> _paymentAgg = new();
 
         private readonly Dictionary<string, HashSet<string>> _lordInvestmentTracker = new();
 
         private bool _hasValidatedInvestmentData = false;
-        private bool _caravanCleanupDone = false;
 
         public readonly Dictionary<Clan, string> ClanIncomeTotal = new();
         public readonly Dictionary<Hero, string> HeroIncomeTotal = new();
@@ -127,12 +111,6 @@ namespace ImprovedEconomyForAILords
         {
             if (!settings.EnableThisModification)
                 return;
-
-            if (!_caravanCleanupDone)
-            {
-                RemoveAllModSpawnedCaravans();
-                _caravanCleanupDone = true;
-            }
 
             if (!_hasValidatedInvestmentData)
             {
@@ -173,22 +151,6 @@ namespace ImprovedEconomyForAILords
         {
         }
 
-        private void RemoveAllModSpawnedCaravans()
-        {
-            foreach (Hero hero in Hero.AllAliveHeroes.ToList())
-            {
-                if (hero == Hero.MainHero || !hero.IsClanLeader || hero.Clan == null)
-                    continue;
-
-                if (hero.OwnedCaravans == null || hero.OwnedCaravans.Count <= 0)
-                    continue;
-
-                int ownedCaravansCount = hero.OwnedCaravans.Count;
-
-                RemoveExcessCaravansForHero(hero, ownedCaravansCount, 0);
-            }
-        }
-
         private void ProcessDenarsRevenueForAILords()
         {
             leadersWithFiefs.Clear();
@@ -196,7 +158,6 @@ namespace ImprovedEconomyForAILords
             leadersNoFiefs.Clear();
             membersNoFiefs.Clear();
             _paymentAgg.Clear();
-            _countedFieflessClans.Clear();
 
             fieflessRelNoPayClans = 0;
             fieflessRelMinus29to29Clans = 0;
@@ -394,8 +355,8 @@ namespace ImprovedEconomyForAILords
                     else
                         continue;
 
-                    ApplyFiefDenarsBonusForHero(fieflessClanMember, fief, isCastle, isClanLeader, false);
-                    ApplyVillageDenarsBonusForHero(fieflessClanMember, fief, isClanLeader, false);
+                    ApplyFiefDenarsBonusForHero(fieflessClanMember, fief, isCastle, isClanLeader, false, localFieflessClanMembersRevenueMultiplier);
+                    ApplyVillageDenarsBonusForHero(fieflessClanMember, fief, isClanLeader, false, localFieflessClanMembersRevenueMultiplier);
                 }
             }
         }
@@ -444,7 +405,7 @@ namespace ImprovedEconomyForAILords
             int basePayment = (int)((CalculateFiefDenarsPayment(town) * ConsiderLordsTradeSkill(hero, settings)));
             basePayment = (int)(basePayment * (IsFiefACastle ? _currentDenarsRevenueMultiplierFromCastle : _currentDenarsRevenueMultiplierFromTown));
 
-            int actualPayment = ProcessPaymentForHero(hero, basePayment, IsFiefACastle, IsClanLeader, HasFief, false);
+            int actualPayment = ProcessPaymentForHero(hero, basePayment, IsFiefACastle, IsClanLeader, HasFief, false, fieflessMult);
             UpdatePaymentAggregation(hero, actualPayment, IsFiefACastle, isVillage: false);
         }
 
@@ -458,7 +419,7 @@ namespace ImprovedEconomyForAILords
                 int basePayment = (int)((CalculateVillageDenarsPayment(village) * ConsiderLordsTradeSkill(hero, settings))
                     * _currentDenarsRevenueMultiplierFromVillage);
 
-                int actualPayment = ProcessPaymentForHero(hero, basePayment, false, IsClanLeader, HasFief, true);
+                int actualPayment = ProcessPaymentForHero(hero, basePayment, false, IsClanLeader, HasFief, true, fieflessMult);
                 UpdatePaymentAggregation(hero, actualPayment, false, isVillage: true);
             }
         }
@@ -573,33 +534,9 @@ namespace ImprovedEconomyForAILords
             return 1f;
         }
 
-        private static void RemoveExcessCaravansForHero(Hero hero, int ownedCaravansCount, int maxCaravansPossible)
-        {
-            int caravansToRemoveCount = ownedCaravansCount - maxCaravansPossible;
-            List<CaravanPartyComponent> caravansToRemove = hero.OwnedCaravans.Take(caravansToRemoveCount).ToList();
-
-            foreach (var caravan in caravansToRemove)
-            {
-                if (caravan == null || caravan.MobileParty == null || caravan.MobileParty.IsActive == false)
-                    continue;
-
-                if (caravan.MobileParty.CurrentSettlement != null && caravan.MobileParty.CurrentSettlement.IsUnderSiege)
-                    continue;
-
-                try
-                {
-                    DestroyPartyAction.Apply(null, caravan.MobileParty);
-                }
-                catch (Exception ex)
-                {
-                    DebugLogMessage($"Failed to remove caravan for {hero?.Name}: {ex.Message}");
-                }
-            }
-        }
-
         private void HandleArenaLeadersForAI()
         {
-            if (!settings.EnableAILordsArenaRevenue)
+            if (!settings.EnableArenaRevenue)
                 return;
 
             playerIncomeFromArenaLeaderboard = 0;
@@ -631,9 +568,6 @@ namespace ImprovedEconomyForAILords
                 int actualRank = i + 1;
 
                 if (hero.IsPrisoner)
-                    continue;
-
-                if (hero == Hero.MainHero && !settings.EnablePlayerArenaRevenue)
                     continue;
 
                 int reward = CalculateArenaReward(actualRank);
@@ -868,7 +802,6 @@ namespace ImprovedEconomyForAILords
                 return;
 
             var keysToRemove = new List<string>();
-            var updatedEntries = 0;
 
             foreach (var heroId in _lordInvestmentTracker.Keys.ToList())
             {
@@ -892,7 +825,6 @@ namespace ImprovedEconomyForAILords
                 if (validSettlements.Count != _lordInvestmentTracker[heroId].Count)
                 {
                     _lordInvestmentTracker[heroId] = validSettlements;
-                    updatedEntries++;
                 }
 
                 if (validSettlements.Count == 0)
@@ -987,11 +919,6 @@ namespace ImprovedEconomyForAILords
             }
         }
 
-        private static void DebugLogMessage(string message)
-        {
-            InformationManager.DisplayMessage(new InformationMessage(message, Colors.Red));
-        }
-
         private void LogMessage(string message)
         {
             LogMessage(message, Colors.Yellow);
@@ -1009,8 +936,6 @@ namespace ImprovedEconomyForAILords
         {
             try
             {
-                dataStore.SyncData("AILordsCaravanCleanupDone", ref _caravanCleanupDone);
-
                 if (dataStore.IsLoading)
                 {
                     string savedDataString = "";
